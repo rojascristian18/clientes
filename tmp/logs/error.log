@@ -1,0 +1,257 @@
+2016-04-26 12:29:25 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-26 12:29:26 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-26 12:29:26 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-26 12:29:27 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-26 12:49:24 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'brandon_clientes.tb_modulos_roles' doesn't exist
+Request URL: /cake/clientes/admin/modulos/add
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Modulo`...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Modulo`...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Modulo`...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Modulo), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\cake\clientes\Controller\AppController.php(137): Model->find('all', Array)
+#7 C:\wamp\www\cake\clientes\Controller\AppController.php(81): AppController->getModuleByRole()
+#8 [internal function]: AppController->beforeFilter(Object(CakeEvent))
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Event\CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(189): Controller->startupProcess()
+#12 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ModulosController), Object(CakeRequest))
+#13 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-04-26 12:49:25 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'brandon_clientes.tb_modulos_roles' doesn't exist
+Request URL: /cake/clientes/admin/modulos/add
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Modulo`...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Modulo`...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Modulo`...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Modulo), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\cake\clientes\Controller\AppController.php(137): Model->find('all', Array)
+#7 C:\wamp\www\cake\clientes\Controller\AppController.php(81): AppController->getModuleByRole()
+#8 [internal function]: AppController->beforeFilter(Object(CakeEvent))
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Event\CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(189): Controller->startupProcess()
+#12 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ModulosController), Object(CakeRequest))
+#13 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-04-26 12:49:42 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'brandon_clientes.tb_modulos_roles' doesn't exist
+Request URL: /cake/clientes/admin/modulos/add
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Modulo`...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Modulo`...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Modulo`...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Modulo), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\cake\clientes\Controller\AppController.php(137): Model->find('all', Array)
+#7 C:\wamp\www\cake\clientes\Controller\AppController.php(81): AppController->getModuleByRole()
+#8 [internal function]: AppController->beforeFilter(Object(CakeEvent))
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Event\CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(189): Controller->startupProcess()
+#12 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ModulosController), Object(CakeRequest))
+#13 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-04-26 12:49:43 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'brandon_clientes.tb_modulos_roles' doesn't exist
+Request URL: /cake/clientes/admin/modulos/add
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Modulo`...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Modulo`...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Modulo`...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Modulo), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\cake\clientes\Controller\AppController.php(137): Model->find('all', Array)
+#7 C:\wamp\www\cake\clientes\Controller\AppController.php(81): AppController->getModuleByRole()
+#8 [internal function]: AppController->beforeFilter(Object(CakeEvent))
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Event\CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(189): Controller->startupProcess()
+#12 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ModulosController), Object(CakeRequest))
+#13 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-04-26 12:51:57 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'brandon_clientes.tb_modulos_roles' doesn't exist
+Request URL: /cake/clientes/admin/modulos/add
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Modulo`...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Modulo`...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Modulo`...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Modulo), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\cake\clientes\Controller\AppController.php(137): Model->find('all', Array)
+#7 C:\wamp\www\cake\clientes\Controller\AppController.php(81): AppController->getModuleByRole()
+#8 [internal function]: AppController->beforeFilter(Object(CakeEvent))
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Event\CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(189): Controller->startupProcess()
+#12 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ModulosController), Object(CakeRequest))
+#13 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-04-26 12:52:56 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'brandon_clientes.tb_modulos_roles' doesn't exist
+Request URL: /cake/clientes/admin/modulos/add
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Modulo`...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Modulo`...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Modulo`...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Modulo), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\cake\clientes\Controller\AppController.php(137): Model->find('all', Array)
+#7 C:\wamp\www\cake\clientes\Controller\AppController.php(81): AppController->getModuleByRole()
+#8 [internal function]: AppController->beforeFilter(Object(CakeEvent))
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Event\CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(189): Controller->startupProcess()
+#12 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ModulosController), Object(CakeRequest))
+#13 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-04-26 12:58:31 Error: [MissingControllerException] Controller class AdministradorController could not be found.
+Exception Attributes: array (
+  'class' => 'AdministradorController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/admin/administrador/edit=!
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-26 12:58:35 Error: [MissingControllerException] Controller class AdministradorController could not be found.
+Exception Attributes: array (
+  'class' => 'AdministradorController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/admin/administrador/edit=1
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-26 12:58:42 Error: [MissingActionException] Action AdministradoresController::admin_edit=1() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdministradoresController',
+  'action' => 'admin_edit=1',
+)
+Request URL: /cake/clientes/admin/administradores/edit=1
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdministradoresController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-26 12:58:48 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Administrador.roles_id' in 'on clause'
+Request URL: /cake/clientes/admin
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Adminis...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Adminis...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Adminis...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Administrador), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(1086): PaginatorComponent->paginate(NULL, Array, Array)
+#8 C:\wamp\www\cake\clientes\Controller\AdministradoresController.php(72): Controller->paginate()
+#9 [internal function]: AdministradoresController->admin_index()
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdministradoresController), Array)
+#11 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdministradoresController), Object(CakeRequest))
+#13 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-04-26 12:59:00 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Administrador.roles_id' in 'on clause'
+Request URL: /cake/clientes/admin
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Adminis...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Adminis...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Adminis...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Administrador), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(1086): PaginatorComponent->paginate(NULL, Array, Array)
+#8 C:\wamp\www\cake\clientes\Controller\AdministradoresController.php(72): Controller->paginate()
+#9 [internal function]: AdministradoresController->admin_index()
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdministradoresController), Array)
+#11 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdministradoresController), Object(CakeRequest))
+#13 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-04-26 12:59:06 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Administrador.roles_id' in 'on clause'
+Request URL: /cake/clientes/admin
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Adminis...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Adminis...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Adminis...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Administrador), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(1086): PaginatorComponent->paginate(NULL, Array, Array)
+#8 C:\wamp\www\cake\clientes\Controller\AdministradoresController.php(72): Controller->paginate()
+#9 [internal function]: AdministradoresController->admin_index()
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdministradoresController), Array)
+#11 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdministradoresController), Object(CakeRequest))
+#13 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-04-26 12:59:56 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\cake\clientes\Controller\AdministradoresController.php, line 122]
+2016-04-26 12:59:56 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /cake/clientes/admin/administradores/edit/1
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\cak...', 122)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\cak...', 122, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\cak...', 122, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-04-26 13:00:38 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\cake\clientes\Controller\AdministradoresController.php, line 123]
+2016-04-26 13:00:38 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /cake/clientes/admin/administradores/edit/1
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\cak...', 123)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\cak...', 123, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\cak...', 123, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-04-26 13:00:57 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\cake\clientes\Controller\AdministradoresController.php, line 123]
+2016-04-26 13:00:57 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /cake/clientes/admin/administradores/edit/1
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\cak...', 123)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\cak...', 123, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\cak...', 123, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
