@@ -25,3 +25,10 @@
 	line-height: normal;
 	margin-left: 5px;
 }
+.profile .profile-controls a.profile-control-left{top: 18px;}
+.x-navigation.x-navigation-custom > .xn-title{color: #FFD559;}
+.date{display: inline-block;width: auto;}
+.x-navigation .x-navigation-control{left: 0;}
+.panel.panel-primary {
+    border-top-color: #FFD559;
+}

@@ -2,34 +2,40 @@
 	<ul class="x-navigation x-navigation-custom">
 		<li class="xn-logo">
 			<?= $this->Html->link(
-				'<span class="fa fa-dashboard"></span> <span class="x-navigation-control">Backend</span>',
+				'<span class="fa fa-dashboard"></span> <span class="x-navigation-control">Backend</span><a href="#" class="x-navigation-control"></a>',
 				'/admin',
+				array('escape' => false)
+			); ?>
+		</li>
+		<li class="xn-profile active">
+            <div class="profile">
+                <div class="profile-data">
+                    <div class="profile-data-name"><?=$this->Session->read('Auth.Administrador.nombre');?></div>
+                    <div class="profile-data-title"><?=$this->Session->read('Auth.Administrador.Rol.nombre');?></div>
+                </div>
+                <div class="profile-controls">
+                	<?= $this->Html->link('<span class="fa fa-user"></span>',
+						'/admin/administradores/perfil/' . $this->Session->read('Auth.Administrador.id'),
+						array('escape' => false, 'class' => 'profile-control-left')
+					); ?>
+                </div>
+            </div>                                                                        
+        </li>
+		<li class="<?= ($this->Html->menuActivo(array('controller' => 'dashboard', 'action' => 'index')) ? 'active' : ''); ?>">
+		<?= $this->Html->link(
+				'<span class="fa fa-dashboard"></span> <span class="xn-text">Dashboard</span>',
+				'/admin/dashboard',
 				array('escape' => false)
 			); ?>
 		</li>
 		<!-- Get Modules View -->	
 		<?= $this->element('modulos'); ?>
 		
-		<? 	$controladores		=  array_map(function($controlador) {
+		<? if ($this->Session->read('Administrador.Rol.id') != 3) { ?>
+			
+			<?= $this->element('controladores'); ?>
 
-					return str_replace('Controller', '', $controlador);
-
-				}, App::objects('controller')); ?>
-		<li class="xn-openable">
-			<a href="#"><span class="fa fa-cog"></span> <span class="xn-text">Controladores</span></a>
-			<ul>
-				<? foreach ( $controladores as $controlador ) : ?>
-				<? if ( $controlador === 'App' ) continue; ?>
-				<li class="<?= ($this->Html->menuActivo(array('controller' => strtolower($controlador))) ? 'active' : ''); ?>">
-					<?= $this->Html->link(
-						sprintf('<span class="fa fa-list"></span> <span class="xn-text">%s</span>', ucfirst($controlador)),
-						array('controller' => strtolower($controlador), 'action' => 'index'),
-						array('escape' => false)
-					); ?>
-				</li>
-				<? endforeach; ?>
-			</ul>
-		</li>
+		<? }?>
 
 	</ul>
 </div>

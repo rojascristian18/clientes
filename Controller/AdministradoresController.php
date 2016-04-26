@@ -20,7 +20,10 @@ class AdministradoresController extends AppController
 		if ( $this->request->is('post') )
 		{
 			if ( $this->Auth->login() )
-			{
+			{	
+				$this->Administrador->id = $this->Auth->user('id');
+				$this->Administrador->saveField('ultimo_acceso', date('Y-m-d H:m:s'));
+
 				$this->redirect($this->Auth->redirectUrl());
 			}
 			else
@@ -153,5 +156,18 @@ class AdministradoresController extends AppController
 		$modelo			= $this->Administrador->alias;
 
 		$this->set(compact('datos', 'campos', 'modelo'));
+	}
+
+	public function admin_perfil($id = null) {
+		$this->Administrador->id = $id;
+		if ( ! $this->Administrador->exists() )
+		{
+			$this->Session->setFlash('Perfil no existe.', null, array(), 'danger');
+			$this->redirect(array('controller' => 'dashboard','action' => 'index'));
+		}else{
+			$administrador = $this->Administrador->find('first', array('conditions' => array('id' => $id)));
+			$this->set(compact('administrador'));
+		}
+		
 	}
 }

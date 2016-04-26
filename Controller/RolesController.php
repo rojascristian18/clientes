@@ -56,8 +56,12 @@ class RolesController extends AppController
 				'conditions'	=> array('Rol.id' => $id)
 			));
 		}
-		$modulos	= $this->Rol->Modulo->find('list');
-		$this->set(compact('modulos'));
+		$modulosSeleccionados = $this->Rol->find('first',array(
+			'contain' => array('Modulo' => array('conditions' => array('Modulo.parent_id != 0'))), 
+			'conditions' => array('Rol.id' => $id)));
+		
+		$modulos	= $this->Rol->Modulo->find('list',array('conditions' => array('parent_id != 0')));
+		$this->set(compact('modulos','modulosSeleccionados'));
 	}
 
 	public function admin_delete($id = null)
