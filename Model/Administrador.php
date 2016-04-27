@@ -5,7 +5,7 @@ class Administrador extends AppModel
 	/**
 	 * CONFIGURACION DB
 	 */
-
+	var $displayField = "nombre";
 	/**
 	 * BEHAVIORS
 	 */

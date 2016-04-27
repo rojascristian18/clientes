@@ -9,6 +9,7 @@
 		<?= $this->Html->css(array(
 			'/backend/css/theme-default',
 			'/backend/css/custom',
+			'/backend/css/icheck/skins/flat/red',
 			/*
 			'/backend/css/ion/ion.rangeSlider',
 			'/backend/css/ion/ion.rangeSlider.skinFlat',
@@ -24,6 +25,9 @@
 			//'/backend/js/plugins/jquery/jquery-ui.min',
 			'/backend/js/plugins/bootstrap/bootstrap.min',
 			'/backend/js/plugins/bootstrap/bootstrap-select',
+			'/backend/js/plugins/icheck/icheck.min',
+			//'/backend/js/custom',
+			'/backend/js/sitio',
 			/*
 			'/backend/js/plugins/bootstrap/bootstrap-datepicker',
 
@@ -41,7 +45,7 @@
 
 			'/backend/js/plugins/morris/raphael-min',
 			'/backend/js/plugins/morris/morris.min',
-			'/backend/js/custom',
+			
 			//'/backend/js/demo_dashboard',
 			'/backend/js/plugins/ion/ion.rangeSlider.min',
 			'/backend/js/plugins/rangeslider/jQAllRangeSliders-min',

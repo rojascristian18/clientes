@@ -47,6 +47,15 @@ class Log extends AppModel
 			'order'					=> '',
 			'counterCache'			=> true,
 			//'counterScope'			=> array('Asociado.modelo' => 'Administrador')
+		),
+		'Cliente' => array(
+			'className'				=> 'Cliente',
+			'foreignKey'			=> 'cliente_id',
+			'conditions'			=> '',
+			'fields'				=> '',
+			'order'					=> '',
+			'counterCache'			=> true,
+			//'counterScope'			=> array('Asociado.modelo' => 'Administrador')
 		)
 	);
 }

@@ -27,7 +27,8 @@ class LogsController extends AppController
 			}
 		}
 		$administradores	= $this->Log->Administrador->find('list');
-		$this->set(compact('administradores'));
+		$clientes	= $this->Log->Cliente->find('list');
+		$this->set(compact('administradores','clientes'));
 	}
 
 	public function admin_edit($id = null)
@@ -57,7 +58,8 @@ class LogsController extends AppController
 			));
 		}
 		$administradores	= $this->Log->Administrador->find('list');
-		$this->set(compact('administradores'));
+		$clientes	= $this->Log->Cliente->find('list');
+		$this->set(compact('administradores','clientes'));
 	}
 
 	public function admin_delete($id = null)

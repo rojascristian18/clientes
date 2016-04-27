@@ -14,7 +14,8 @@
  * jQuery
  */
 jQuery(document).ready(function($)
-{
+{	
+	
 	$('.js-query-ver-query').on('click', function(evento)
 	{
 		evento.preventDefault();

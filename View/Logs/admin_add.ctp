@@ -15,6 +15,10 @@
 						<td><?= $this->Form->input('administrador_id'); ?></td>
 					</tr>
 					<tr>
+						<th><?= $this->Form->label('cliente_id', 'Cliente'); ?></th>
+						<td><?= $this->Form->input('cliente_id'); ?></td>
+					</tr>
+					<tr>
 						<th><?= $this->Form->label('comentario', 'Comentario'); ?></th>
 						<td><?= $this->Form->input('comentario'); ?></td>
 					</tr>

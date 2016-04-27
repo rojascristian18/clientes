@@ -4,9 +4,27 @@ class ClientesController extends AppController
 {
 	public function admin_index()
 	{
-		$this->paginate		= array(
-			'recursive'			=> 0
-		);
+		if ($this->Session->read('Auth.Administrador.Rol.id') == 3) {
+			$this->paginate		= array(
+				'recursive'			=> 0,
+				'joins' 			=> array(
+					array(
+			            'table' => 'administradores_clientes',
+			            'alias' => 'AdminCliente',
+			            'type'  => 'INNER',
+			            'conditions' => array(
+			                'AdminCliente.cliente_id = Cliente.id',
+			                'AdminCliente.administrador_id' => $this->Auth->user('id')
+			            )
+
+		        	)
+				)
+			);
+		}else{
+			$this->paginate		= array(
+				'recursive'			=> 0
+			);
+		}
 		$clientes	= $this->paginate();
 		$this->set(compact('clientes'));
 	}
@@ -14,9 +32,44 @@ class ClientesController extends AppController
 	public function admin_add()
 	{
 		if ( $this->request->is('post') )
-		{
+		{	
+			/**
+			*	Eliminar Contacto si nombre
+			*/
+			if (isset($this->request->data['Contacto'])) {
+				foreach ($this->request->data['Contacto'] as $index => $registro) {
+					if (empty($registro['nombre'])) {
+						unset($this->request->data['Contacto'][$index]);
+					}
+				}
+			}
+
+			if (isset($this->request->data['Inverison'])) {
+				foreach ($this->request->data['Inverison'] as $index => $registro) {
+					if (empty($registro['comentario'])) {
+						unset($this->request->data['Inverison'][$index]);
+					}
+				}
+			}
+
+			if (isset($this->request->data['Sitio'])) {
+				foreach ($this->request->data['Sitio'] as $index => $registro) {
+					if (empty($registro['nombre'])) {
+						unset($this->request->data['Sitio'][$index]);
+					}
+				}
+			}
+			
+			if (isset($this->request->data['Servicio'])) {
+				foreach ($this->request->data['Servicio'] as $index => $registro) {
+					if (empty($registro['comentario'])) {
+						unset($this->request->data['Servicio'][$index]);
+					}
+				}
+			}
+
 			$this->Cliente->create();
-			if ( $this->Cliente->save($this->request->data) )
+			if ( $this->Cliente->saveAll($this->request->data) )
 			{
 				$this->Session->setFlash('Registro agregado correctamente.', null, array(), 'success');
 				$this->redirect(array('action' => 'index'));
@@ -27,7 +80,7 @@ class ClientesController extends AppController
 			}
 		}
 		$administradores	= $this->Cliente->Administrador->find('list');
-		$this->set(compact('administradores'));
+		$this->set(compact('administradores','contactos'));
 	}
 
 	public function admin_edit($id = null)
@@ -39,8 +92,70 @@ class ClientesController extends AppController
 		}
 
 		if ( $this->request->is('post') || $this->request->is('put') )
-		{
-			if ( $this->Cliente->save($this->request->data) )
+		{	
+			/**
+			*	Eliminar array vacio
+			*/
+			if (isset($this->request->data['Contacto'])) {
+				foreach ($this->request->data['Contacto'] as $index => $registro) {
+					if (empty($registro['nombre'])) {
+						unset($this->request->data['Contacto'][$index]);
+					}
+				}
+			}
+
+			if (isset($this->request->data['Inverison'])) {
+				foreach ($this->request->data['Inverison'] as $index => $registro) {
+					if (empty($registro['comentario'])) {
+						unset($this->request->data['Inverison'][$index]);
+					}
+				}
+			}
+
+			if (isset($this->request->data['Sitio'])) {
+				foreach ($this->request->data['Sitio'] as $index => $registro) {
+					if (empty($registro['nombre'])) {
+						unset($this->request->data['Sitio'][$index]);
+					}
+				}
+			}
+			
+			if (isset($this->request->data['Servicio'])) {
+				foreach ($this->request->data['Servicio'] as $index => $registro) {
+					if (empty($registro['comentario'])) {
+						unset($this->request->data['Servicio'][$index]);
+					}
+				}
+			}
+
+			/**
+			*	Eliminar e insertar nuevos
+			*/
+			$this->Cliente->Contacto->deleteAll(
+                   array(
+                           'Contacto.cliente_id' => $id,
+                   )
+           	);
+
+           	$this->Cliente->Inverison->deleteAll(
+                   array(
+                           'Inverison.cliente_id' => $id,
+                   )
+           	);
+
+           	$this->Cliente->Sitio->deleteAll(
+                   array(
+                           'Sitio.cliente_id' => $id,
+                   )
+           	);
+
+           	$this->Cliente->Servicio->deleteAll(
+                   array(
+                           'Servicio.cliente_id' => $id,
+                   )
+           	);
+
+			if ( $this->Cliente->saveAll($this->request->data) )
 			{
 				$this->Session->setFlash('Registro editado correctamente', null, array(), 'success');
 				$this->redirect(array('action' => 'index'));
@@ -51,13 +166,17 @@ class ClientesController extends AppController
 			}
 		}
 		else
-		{
+		{	
 			$this->request->data	= $this->Cliente->find('first', array(
-				'conditions'	=> array('Cliente.id' => $id)
+				'conditions'	=> array('Cliente.id' => $id),
+				'contain'		=> array('Contacto','Inverison','Servicio','Sitio','Log' => array('Administrador'),'Calendario')
 			));
 		}
+		$designados = $this->Cliente->find('first', array(
+			'conditions' 	=> array('Cliente.id' => $id),
+			'contain' 		=> array('Administrador')) );
 		$administradores	= $this->Cliente->Administrador->find('list');
-		$this->set(compact('administradores'));
+		$this->set(compact('administradores','contactos','designados'));
 	}
 
 	public function admin_delete($id = null)
