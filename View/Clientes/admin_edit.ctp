@@ -349,7 +349,7 @@
 				</div>
 			</div>
 		</div>
-		<?=$this->Form->input('Log.0.administrador_id',array('type' => 'hidden', 'value' => $this->Session->read('Administrador.id')));?>
+		<?=$this->Form->input('Log.0.administrador_id',array('type' => 'hidden', 'value' => $this->Session->read('Auth.Administrador.id')));?>
 		<?=$this->Form->input('Log.0.comentario',array('type' => 'hidden', 'value' => 'Cliente modificado'));?>
 		<?=$this->Form->input('Log.0.fecha',array('type' => 'hidden', 'value' => date('Y-m-d H:m:s')));?>
 		<?=$this->Form->input('Log.0.realizado',array('type' => 'hidden', 'value' => '1'));?>

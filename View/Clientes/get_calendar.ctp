@@ -5,7 +5,7 @@
 	</div>
 	<div class="panel-body">
 		<div class="table-responsive">
-			<table class="table">
+			<table class="table calendario">
 				<thead>
 					<tr>
 						<th>Semana/Día</th>
@@ -13,12 +13,12 @@
 						<th>Martes</th>
 						<th>Miercoles</th>
 						<th>Jueves</th>
-						<th>Virenes</th>
+						<th>Viernes</th>
 					</tr>
 				</thead>
 				<tbody>
 					<? for ($i=1; $i < 5; $i++) {
-						echo "<tr><td>Semana ".$i."</td>";
+						echo "<tr><td><span class='semana'>Semana ".$i."</span></td>";
 						for ($j=1; $j < 6; $j++) {
 							echo "<td><div class='calendar-box' data-semana='".$i."' data-dia='".$j."'>";
 							foreach ($this->request->data['Calendario'] as $indice => $posicion) {

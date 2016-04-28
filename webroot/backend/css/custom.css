@@ -33,5 +33,12 @@
 .error-message{background-color: #B64645; color: #fff; font-size: 11px; font-weight: bold;padding: 5px;}
 #ClienteAdminAddForm textarea{resize:none;height: 60px;}
 #ClienteAdminEditForm textarea{resize:none;height: 60px;}
-.calendar-box{min-height: 18px; display: block;width: 100%;cursor: pointer;}
-.calendar-box .modificar{color: rgb(100, 182, 12);}
+.calendar-box{height: 30px; display: block;width: 100%;cursor: pointer;}
+.calendar-box .modificar label {color: rgb(255, 255, 255);background-color: #5CAE10; width: auto;padding: 5px 10px;border-radius: 3px;margin: 0;font-size: 1.2em; cursor: pointer;}
+.calendario .semana{line-height: 30px;color: #A4A4A4;font-weight: bold;}
+.calendario tr > td:first-child{background-color: #EAEAEA;border-color: #fff;width: 150px;max-width: 100%;}
+.calendario tr > td{width: auto;max-width: 300px;}
+#confirmar .modal-content{background-color: transparent;}
+#confirmar .modal-body {background-color: #fff;}
+#confirmar .modal-header {background: #539E1F;border:none;}
+#confirmar .modal-title {color: #fff;}

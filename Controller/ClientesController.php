@@ -5,8 +5,7 @@ class ClientesController extends AppController
 	public function admin_index()
 	{
 		if ($this->Session->read('Auth.Administrador.Rol.id') == 3) {
-			$this->paginate		= array(
-				'recursive'			=> 0,
+			$clientes		= $this->Cliente->find('all',array(
 				'joins' 			=> array(
 					array(
 			            'table' => 'administradores_clientes',
@@ -19,13 +18,11 @@ class ClientesController extends AppController
 
 		        	)
 				)
-			);
+			));
 		}else{
-			$this->paginate		= array(
-				'recursive'			=> 0
-			);
+			$clientes	= $this->Cliente->find('all');
 		}
-		$clientes	= $this->paginate();
+		//$clientes	= $this->paginate();
 		$this->set(compact('clientes'));
 	}
 
@@ -154,7 +151,7 @@ class ClientesController extends AppController
                            'Servicio.cliente_id' => $id,
                    )
            	);
-
+           	
 			if ( $this->Cliente->saveAll($this->request->data) )
 			{
 				$this->Session->setFlash('Registro editado correctamente', null, array(), 'success');

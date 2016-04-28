@@ -31,7 +31,7 @@
 		<!-- Get Modules View -->	
 		<?= $this->element('modulos'); ?>
 		
-		<? if ($this->Session->read('Administrador.Rol.id') != 3) { ?>
+		<? if ($this->Session->read('Auth.Administrador.Rol.id') == 1) { ?>
 			
 			<?= $this->element('controladores'); ?>
 

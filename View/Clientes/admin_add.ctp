@@ -299,39 +299,7 @@
 				</div>
 			</div>
 		</div>
-		<!-- CALENDARIO -->
-		<div class="panel panel-primary">
-			<div class="panel-heading">
-				<h3 class="panel-title"><sapan class="fa fa-calendar"></sapan> Calendario</h3>
-			</div>
-			<div class="panel-body">
-				<div class="table-responsive">
-					<table class="table">
-						<thead>
-							<tr>
-								<th>Lunes</th>
-								<th>Martes</th>
-								<th>Miercoles</th>
-								<th>Jueves</th>
-								<th>Virenes</th>
-							</tr>
-						</thead>
-						<tbody>
-							<? for ($i=0; $i < 5; $i++) {
-								for ($j=0; $j < 4; $j++) { 
-									echo "<td>". $i ."-".$j."</td>";
-								}
-							}?>
-						</tbody>
-					</table>
-					<div class="pull-right">
-						<input type="submit" class="btn btn-primary esperar-carga" autocomplete="off" data-loading-text="Espera un momento..." value="Guardar cambios">
-						<?= $this->Html->link('Cancelar', array('action' => 'index'), array('class' => 'btn btn-danger')); ?>
-					</div>
-				</div>
-			</div>
-		</div>
-		<?=$this->Form->input('Log.0.administrador_id',array('type' => 'hidden', 'value' => $this->Session->read('Administrador.id')));?>
+		<?=$this->Form->input('Log.0.administrador_id',array('type' => 'hidden', 'value' => $this->Session->read('Auth.Administrador.id')));?>
 		<?=$this->Form->input('Log.0.comentario',array('type' => 'hidden', 'value' => 'Cliente creado'));?>
 		<?=$this->Form->input('Log.0.fecha',array('type' => 'hidden', 'value' => date('Y-m-d H:m:s')));?>
 		<?=$this->Form->input('Log.0.realizado',array('type' => 'hidden', 'value' => '1'));?>

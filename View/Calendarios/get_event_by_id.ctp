@@ -9,7 +9,7 @@
 		<td><?= $this->Form->input('nombre'); ?></td>
 	</tr>
 	<tr>
-		<th><?= $this->Form->label('observacion', 'Observacion'); ?></th>
+		<th><?= $this->Form->label('observacion', 'Observación'); ?></th>
 		<td><?= $this->Form->input('observacion'); ?></td>
 	</tr>
 </table>

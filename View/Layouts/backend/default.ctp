@@ -22,12 +22,14 @@
 		<?= $this->Html->scriptBlock("var fullwebroot = '{$this->Html->url('', true)}';"); ?>
 		<?= $this->Html->script(array(
 			'/backend/js/plugins/jquery/jquery.min',
-			//'/backend/js/plugins/jquery/jquery-ui.min',
+			'/backend/js/plugins/jquery/jquery-ui.min',
 			'/backend/js/plugins/bootstrap/bootstrap.min',
 			'/backend/js/plugins/bootstrap/bootstrap-select',
 			'/backend/js/plugins/icheck/icheck.min',
+			'/backend/js/plugins/datatables/jquery.dataTables.min',
 			//'/backend/js/custom',
 			'/backend/js/sitio',
+			'/backend/js/plugins'
 			/*
 			'/backend/js/plugins/bootstrap/bootstrap-datepicker',
 

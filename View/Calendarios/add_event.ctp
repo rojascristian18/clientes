@@ -11,7 +11,7 @@
 		<?= $this->Form->input('dia',array('type' => 'hidden', 'value' => $dia)); ?>
 		<?= $this->Form->input('semana',array('type' => 'hidden', 'value' => $semana)); ?>
 		<tr>
-			<th><?= $this->Form->label('observacion', 'Observacion'); ?></th>
+			<th><?= $this->Form->label('observacion', 'Observación'); ?></th>
 			<td><?= $this->Form->input('observacion'); ?></td>
 		</tr>
 	</table>
