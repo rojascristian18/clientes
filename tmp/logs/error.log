@@ -2493,3 +2493,1032 @@ Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
 Stack Trace:
 #0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2016-04-27 18:01:52 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-27 18:02:00 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 09:35:08 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 09:35:08 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 09:35:09 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 09:35:09 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 09:35:18 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 09:35:24 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 09:35:28 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 09:38:51 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 09:39:32 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 09:39:36 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 09:40:00 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 09:40:04 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 09:40:07 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 09:42:33 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 09:57:42 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 09:58:19 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 09:58:24 Error: [MissingActionException] Action CalendariosController::getEventById() could not be found.
+Exception Attributes: array (
+  'controller' => 'CalendariosController',
+  'action' => 'getEventById',
+)
+Request URL: /cake/clientes/calendarios/getEventById/undefined
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 09:58:45 Error: [MissingActionException] Action CalendariosController::getEventById() could not be found.
+Exception Attributes: array (
+  'controller' => 'CalendariosController',
+  'action' => 'getEventById',
+)
+Request URL: /cake/clientes/calendarios/getEventById/undefined
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 09:59:14 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 10:00:02 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 10:00:17 Error: [MissingActionException] Action CalendariosController::getEventById() could not be found.
+Exception Attributes: array (
+  'controller' => 'CalendariosController',
+  'action' => 'getEventById',
+)
+Request URL: /cake/clientes/calendarios/getEventById/undefined
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 10:01:09 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 10:01:14 Error: [MissingActionException] Action CalendariosController::getEventById() could not be found.
+Exception Attributes: array (
+  'controller' => 'CalendariosController',
+  'action' => 'getEventById',
+)
+Request URL: /cake/clientes/calendarios/getEventById/2
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 10:01:51 Error: [MissingViewException] View file "Calendarios\get_event_by_id.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Calendarios\\get_event_by_id.ctp',
+)
+Request URL: /cake/clientes/calendarios/getEventById/1
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#4 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-04-28 10:02:14 Error: [MissingViewException] View file "Calendarios\get_event_by_id.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Calendarios\\get_event_by_id.ctp',
+)
+Request URL: /cake/clientes/calendarios/getEventById/1
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#4 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-04-28 10:05:14 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 10:06:12 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 10:06:32 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 10:08:50 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 10:09:26 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 10:19:21 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 10:19:33 Error: [MissingActionException] Action CalendariosController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'CalendariosController',
+  'action' => 'index',
+)
+Request URL: /cake/clientes/calendarios
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 10:19:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 10:21:03 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 10:40:10 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 10:40:18 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 10:40:31 Error: [MissingActionException] Action CalendariosController::saveEventById() could not be found.
+Exception Attributes: array (
+  'controller' => 'CalendariosController',
+  'action' => 'saveEventById',
+)
+Request URL: /cake/clientes/calendarios/saveEventById
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 10:40:41 Error: [MissingActionException] Action CalendariosController::saveEventById() could not be found.
+Exception Attributes: array (
+  'controller' => 'CalendariosController',
+  'action' => 'saveEventById',
+)
+Request URL: /cake/clientes/calendarios/saveEventById
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 10:41:02 Error: [MissingActionException] Action CalendariosController::saveEventById() could not be found.
+Exception Attributes: array (
+  'controller' => 'CalendariosController',
+  'action' => 'saveEventById',
+)
+Request URL: /cake/clientes/calendarios/saveEventById
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 10:43:19 Error: [MissingActionException] Action CalendariosController::saveEventById() could not be found.
+Exception Attributes: array (
+  'controller' => 'CalendariosController',
+  'action' => 'saveEventById',
+)
+Request URL: /cake/clientes/calendarios/saveEventById
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 10:43:20 Error: [MissingActionException] Action CalendariosController::saveEventById() could not be found.
+Exception Attributes: array (
+  'controller' => 'CalendariosController',
+  'action' => 'saveEventById',
+)
+Request URL: /cake/clientes/calendarios/saveEventById
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 10:43:20 Error: [MissingActionException] Action CalendariosController::saveEventById() could not be found.
+Exception Attributes: array (
+  'controller' => 'CalendariosController',
+  'action' => 'saveEventById',
+)
+Request URL: /cake/clientes/calendarios/saveEventById
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 10:43:21 Error: [MissingActionException] Action CalendariosController::saveEventById() could not be found.
+Exception Attributes: array (
+  'controller' => 'CalendariosController',
+  'action' => 'saveEventById',
+)
+Request URL: /cake/clientes/calendarios/saveEventById
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 10:43:21 Error: [MissingActionException] Action CalendariosController::saveEventById() could not be found.
+Exception Attributes: array (
+  'controller' => 'CalendariosController',
+  'action' => 'saveEventById',
+)
+Request URL: /cake/clientes/calendarios/saveEventById
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 10:43:22 Error: [MissingActionException] Action CalendariosController::saveEventById() could not be found.
+Exception Attributes: array (
+  'controller' => 'CalendariosController',
+  'action' => 'saveEventById',
+)
+Request URL: /cake/clientes/calendarios/saveEventById
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 10:43:22 Error: [MissingActionException] Action CalendariosController::saveEventById() could not be found.
+Exception Attributes: array (
+  'controller' => 'CalendariosController',
+  'action' => 'saveEventById',
+)
+Request URL: /cake/clientes/calendarios/saveEventById
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 10:43:23 Error: [MissingActionException] Action CalendariosController::saveEventById() could not be found.
+Exception Attributes: array (
+  'controller' => 'CalendariosController',
+  'action' => 'saveEventById',
+)
+Request URL: /cake/clientes/calendarios/saveEventById
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 10:43:23 Error: [MissingActionException] Action CalendariosController::saveEventById() could not be found.
+Exception Attributes: array (
+  'controller' => 'CalendariosController',
+  'action' => 'saveEventById',
+)
+Request URL: /cake/clientes/calendarios/saveEventById
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 10:43:26 Error: [MissingActionException] Action CalendariosController::saveEventById() could not be found.
+Exception Attributes: array (
+  'controller' => 'CalendariosController',
+  'action' => 'saveEventById',
+)
+Request URL: /cake/clientes/calendarios/saveEventById
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 10:43:27 Error: [MissingActionException] Action CalendariosController::saveEventById() could not be found.
+Exception Attributes: array (
+  'controller' => 'CalendariosController',
+  'action' => 'saveEventById',
+)
+Request URL: /cake/clientes/calendarios/saveEventById
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 10:43:27 Error: [MissingActionException] Action CalendariosController::saveEventById() could not be found.
+Exception Attributes: array (
+  'controller' => 'CalendariosController',
+  'action' => 'saveEventById',
+)
+Request URL: /cake/clientes/calendarios/saveEventById
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 10:45:22 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 10:45:41 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 10:46:02 Error: [MissingActionException] Action CalendariosController::saveEventById() could not be found.
+Exception Attributes: array (
+  'controller' => 'CalendariosController',
+  'action' => 'saveEventById',
+)
+Request URL: /cake/clientes/calendarios/saveEventById
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 10:47:50 Error: [MissingViewException] View file "Calendarios\save_event_by_id.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Calendarios\\save_event_by_id.ctp',
+)
+Request URL: /cake/clientes/calendarios/saveEventById
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#4 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-04-28 10:47:51 Error: [MissingViewException] View file "Calendarios\save_event_by_id.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Calendarios\\save_event_by_id.ctp',
+)
+Request URL: /cake/clientes/calendarios/saveEventById
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#4 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-04-28 10:49:07 Error: [MissingViewException] View file "Calendarios\save_event_by_id.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Calendarios\\save_event_by_id.ctp',
+)
+Request URL: /cake/clientes/calendarios/saveEventById
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#4 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-04-28 10:49:07 Error: [MissingViewException] View file "Calendarios\save_event_by_id.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Calendarios\\save_event_by_id.ctp',
+)
+Request URL: /cake/clientes/calendarios/saveEventById
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#4 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-04-28 10:49:08 Error: [MissingViewException] View file "Calendarios\save_event_by_id.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Calendarios\\save_event_by_id.ctp',
+)
+Request URL: /cake/clientes/calendarios/saveEventById
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#4 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-04-28 10:56:53 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 10:59:39 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 11:02:17 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 11:05:15 Error: Fatal Error (4): syntax error, unexpected '=' in [C:\wamp\www\cake\clientes\Controller\CalendariosController.php, line 117]
+2016-04-28 11:05:15 Error: [FatalErrorException] syntax error, unexpected '='
+Request URL: /cake/clientes/calendarios/getEventById/1
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 117)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 117, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 117, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-04-28 11:05:42 Error: Fatal Error (4): syntax error, unexpected '=' in [C:\wamp\www\cake\clientes\Controller\CalendariosController.php, line 117]
+2016-04-28 11:05:42 Error: [FatalErrorException] syntax error, unexpected '='
+Request URL: /cake/clientes/calendarios/getEventById/1
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 117)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 117, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 117, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-04-28 11:06:02 Error: [MissingActionException] Action CalendariosController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'CalendariosController',
+  'action' => 'index',
+)
+Request URL: /cake/clientes/calendarios
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 11:14:20 Error: [MissingActionException] Action CalendariosController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'CalendariosController',
+  'action' => 'index',
+)
+Request URL: /cake/clientes/calendarios
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 11:18:37 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+Request URL: /cake/clientes/calendarios/getEventById/1
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Calenda...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Calenda...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Calenda...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Calendario), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\cake\clientes\Controller\CalendariosController.php(95): Model->find('first', Array)
+#7 [internal function]: CalendariosController->getEventById('1')
+#8 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CalendariosController), Array)
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#11 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-04-28 11:31:37 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 11:46:17 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 11:47:28 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 11:49:43 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 11:51:03 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 12:02:44 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 12:02:51 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [C:\wamp\www\cake\clientes\Controller\CalendariosController.php, line 131]
+2016-04-28 12:02:51 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /cake/clientes/calendarios/getEventById/1
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 131)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 131, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 131, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-04-28 12:07:39 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 12:08:45 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 12:09:07 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 12:09:52 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 12:10:15 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 12:10:20 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 12:10:26 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 12:10:39 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 12:17:12 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 12:17:16 Error: [MissingActionException] Action CalendariosController::saveEvent() could not be found.
+Exception Attributes: array (
+  'controller' => 'CalendariosController',
+  'action' => 'saveEvent',
+)
+Request URL: /cake/clientes/calendarios/saveEvent
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 12:17:57 Error: [MissingActionException] Action CalendariosController::saveEvent() could not be found.
+Exception Attributes: array (
+  'controller' => 'CalendariosController',
+  'action' => 'saveEvent',
+)
+Request URL: /cake/clientes/calendarios/saveEvent
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 12:18:18 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 12:26:20 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 12:27:14 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 12:28:31 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 12:31:58 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 12:34:18 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 12:44:31 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 12:47:37 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [C:\wamp\www\cake\clientes\View\Calendarios\add_event.ctp, line 15]
+2016-04-28 12:47:37 Error: [FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+Request URL: /cake/clientes/calendarios/addEvent/?cliente=2&semana=1&dia=1
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 15, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 15, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-04-28 12:47:46 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [C:\wamp\www\cake\clientes\View\Calendarios\add_event.ctp, line 15]
+2016-04-28 12:47:46 Error: [FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+Request URL: /cake/clientes/calendarios/addEvent/?cliente=2&semana=1&dia=1
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 15, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 15, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-04-28 12:48:52 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 12:50:11 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 12:50:15 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 12:54:26 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 12:56:28 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 12:57:26 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [C:\wamp\www\cake\clientes\Controller\CalendariosController.php, line 137]
+2016-04-28 12:57:26 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /cake/clientes/calendarios/addEvent/?cliente=3&semana=1&dia=1
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 137)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 137, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 137, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-04-28 12:58:13 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 13:04:01 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 13:04:20 Error: [MissingControllerException] Controller class BackendController could not be found.
+Exception Attributes: array (
+  'class' => 'BackendController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

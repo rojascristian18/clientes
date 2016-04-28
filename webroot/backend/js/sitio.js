@@ -120,50 +120,16 @@ $(document).ready(function(){
 	/**
 	*	Calendario
 	**/
-	$(document).on('click','.calendar-box', function(){
-		var box = $(this);
-		var semana = box.data('semana');
-		var dia = box.data('dia');
-		if (box.text() == '') {
-			modalAgregar(semana,dia);
-		}else{
-			var contenedor_input = box.children('.modificar').html();
-			modal(semana,dia,contenedor_input);
-		}
 
-		$('#confirmar input[type="hidden"]').attr('type','text');
+	var idCliente = $('#ClienteId').val();
+	getCalendar(idCliente);
 
-	});
+	function getCalendar(cliente){
+		var url = webroot + "clientes/getCalendar/" + cliente;
+		$.get( url , function( response ){
 
-	$(document).on('click','#confirmar-evento',function(){
-		var semana = $(this).data('x');
-		var dia = $(this).data('y');
-		
-	});
+			$('#calendarioContainer').html(response);
 
-	function modal(x,y,bodys){
-		var modal = $('#confirmar');
-		var title = $('#confirmar .modal-title');
-		var body = $('#confirmar .modal-body');
-		var btn = $('#confirmar #confirmar-evento');
-		body.html(bodys);
-		btn.attr({'data-x': x, 'data-y':y});
-		title.text('Modificar evento');
-		modal.modal('show');
-	}
-
-	function modalAgregar(x,y){
-		var modal = $('#confirmar');
-		var title = $('#confirmar .modal-title');
-		var body = $('#confirmar .modal-body');
-		var btn = $('#confirmar #confirmar-evento');
-		btn.attr({'data-x': x, 'data-y':y});
-		body.text(x+'-'+y);
-		title.text('Agregar evento');
-		modal.modal('show');
-	}
-
-	function modificarEvento(x,y,value_name,value_comment){
-
+		});
 	}
 });

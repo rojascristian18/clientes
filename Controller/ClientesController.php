@@ -208,4 +208,12 @@ class ClientesController extends AppController
 
 		$this->set(compact('datos', 'campos', 'modelo'));
 	}
+
+	public function getCalendar($id){
+		$this->request->data	= $this->Cliente->find('first', array(
+				'conditions'	=> array('Cliente.id' => $id),
+				'contain'		=> array('Calendario')
+			));
+		$this->layout = 'ajax';
+	}
 }

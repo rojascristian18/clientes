@@ -318,68 +318,7 @@
 			</div>
 		</div>
 		<!-- CALENDARIO -->
-		<div class="panel panel-primary">
-			<div class="panel-heading">
-				<h3 class="panel-title"><sapan class="fa fa-calendar"></sapan> Calendario</h3>
-			</div>
-			<div class="panel-body">
-				<div class="table-responsive">
-					<table class="table">
-						<thead>
-							<tr>
-								<th>Semana/Día</th>
-								<th>Lunes</th>
-								<th>Martes</th>
-								<th>Miercoles</th>
-								<th>Jueves</th>
-								<th>Virenes</th>
-							</tr>
-						</thead>
-						<tbody>
-							<? for ($i=1; $i < 5; $i++) {
-								echo "<tr><td>Semana ".$i."</td>";
-								for ($j=1; $j < 6; $j++) {
-									echo "<td><div class='calendar-box' data-semana='".$i."' data-dia='".$j."'>";
-									foreach ($this->request->data['Calendario'] as $indice => $posicion) {
-										if ($posicion['semana'] == $i && $posicion['dia'] == $j) {
-											echo "<div class='modificar'>";
-											echo $posicion['nombre'];
-											echo $this->Form->input('Calendario.'.$indice.'.nombre',array('type' => 'hidden'));
-											echo $this->Form->input('Calendario.'.$indice.'.observacion',array('type' => 'hidden'));
-											echo "</div>";
-										}
-									}
-									echo "</div></td>";
-								}
-								echo "<tr>";
-							}?>
-						</tbody>
-					</table>
-
-					<div class="modal fade" id="confirmar" tabindex="-1" role="dialog">
-					  <div class="modal-dialog">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					        <h4 class="modal-title">Registrar estado</h4>
-					      </div>
-					      <div class="modal-body">
-					        
-					      </div>
-					      <div class="modal-footer">
-					        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-					        <button type="button" class="btn btn-primary" id="confirmar-evento">Guardar</button>
-					      </div>
-					    </div><!-- /.modal-content -->
-					  </div><!-- /.modal-dialog -->
-					</div><!-- /.modal -->
-
-					<div class="pull-right">
-						<input type="submit" class="btn btn-primary esperar-carga" autocomplete="off" data-loading-text="Espera un momento..." value="Guardar cambios">
-						<?= $this->Html->link('Cancelar', array('action' => 'index'), array('class' => 'btn btn-danger')); ?>
-					</div>
-				</div>
-			</div>
+		<div id="calendarioContainer">
 		</div>
 		<!-- Logs -->
 		<div class="panel panel-primary">
