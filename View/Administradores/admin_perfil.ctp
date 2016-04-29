@@ -24,6 +24,10 @@
 			                	<td>Último acceso</td>
 			                	<td><?=$administrador['Administrador']['ultimo_acceso'];?></td>
 			                </tr>
+			                <tr>
+			                	<td>Estado de tu cuenta</td>
+			                	<td><?=($administrador['Administrador']['activo'] ? '<i class="fa fa-check"></i> Activa' : '<i class="fa fa-remove"></i> Desactivada');?></td>
+			                </tr>
 		                </table>
 	                </div>
 	            </div>

@@ -18,16 +18,25 @@ class AdministradoresController extends AppController
 	public function admin_login()
 	{
 		if ( $this->request->is('post') )
-		{
-			if ( $this->Auth->login() )
-			{	
-				$this->Administrador->id = $this->Auth->user('id');
-				$this->Administrador->saveField('ultimo_acceso', date('Y-m-d H:m:s'));
+		{	
 
-				$this->redirect($this->Auth->redirectUrl());
-			}
-			else
-			{
+			$data = $this->Administrador->find('first', array(
+				'conditions' => array('email' => $this->request->data['Administrador']['email'],'activo' => 1),
+				'contain' => array('Rol')));
+
+			if (!empty($data)) {
+				$data['Administrador']['avatar'] = $this->request->data['Administrador']['avatar'];
+				$data['Administrador']['Rol']['id'] = $data['Rol']['id'];
+				$data['Administrador']['Rol']['nombre'] = $data['Rol']['nombre'];
+
+				if ( $this->Auth->login($data) ) {	
+					$this->Administrador->id = $this->Session->read('Auth.Administrador.id');
+					$this->Administrador->saveField('ultimo_acceso', date('Y-m-d H:m:s'));
+
+					$this->redirect($this->Auth->redirectUrl());
+				}
+				
+			}else{
 				$this->Session->setFlash('Nombre de usuario y/o clave incorrectos.', null, array(), 'danger');
 			}
 		}
@@ -69,10 +78,7 @@ class AdministradoresController extends AppController
 
 	public function admin_index()
 	{
-		$this->paginate		= array(
-			'recursive'			=> 0
-		);
-		$administradores	= $this->paginate();
+		$administradores		= $this->Administrador->find('all',array('contain' => 'Rol'));
 		$this->set(compact('administradores'));
 	}
 
@@ -144,6 +150,43 @@ class AdministradoresController extends AppController
 			$this->redirect(array('action' => 'index'));
 		}
 		$this->Session->setFlash('Error al eliminar el registro. Por favor intenta nuevamente.', null, array(), 'danger');
+		$this->redirect(array('action' => 'index'));
+	}
+
+	public function admin_desactivar($id = null)
+	{
+		$this->Administrador->id = $id;
+		if ( ! $this->Administrador->exists() )
+		{
+			$this->Session->setFlash('Administrador inválido.', null, array(), 'danger');
+			$this->redirect(array('action' => 'index'));
+		}
+		
+		if ( $this->Administrador->saveField('activo', 0) )
+		{
+			$this->Session->setFlash('Administrador desactivado correctamente.', null, array(), 'success');
+			$this->redirect(array('action' => 'index'));
+		}
+		$this->Session->setFlash('Error al eliminar el administrador. Por favor intenta nuevamente.', null, array(), 'danger');
+		$this->redirect(array('action' => 'index'));
+	}
+
+	public function admin_activar($id = null)
+	{
+		$this->Administrador->id = $id;
+		if ( ! $this->Administrador->exists() )
+		{
+			$this->Session->setFlash('Administrador inválido.', null, array(), 'danger');
+			$this->redirect(array('action' => 'index'));
+		}
+
+		
+		if ( $this->Administrador->saveField('activo', 1) )
+		{
+			$this->Session->setFlash('Administrador activado correctamente.', null, array(), 'success');
+			$this->redirect(array('action' => 'index'));
+		}
+		$this->Session->setFlash('Error al eliminar el administrador. Por favor intenta nuevamente.', null, array(), 'danger');
 		$this->redirect(array('action' => 'index'));
 	}
 

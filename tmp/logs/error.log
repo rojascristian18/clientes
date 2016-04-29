@@ -4216,3 +4216,166 @@ Request URL: /cake/clientes/backend/css/icheck/skins/flat/red.css
 Stack Trace:
 #0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2016-04-28 17:45:28 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`brandon_clientes`.`tb_logs`, CONSTRAINT `fk_relationship_5` FOREIGN KEY (`administrador_id`) REFERENCES `tb_administradores` (`id`))
+Request URL: /cake/clientes/admin/administradores/delete/2
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('DELETE `Adminis...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\Database\Mysql.php(455): DboSource->execute('DELETE `Adminis...')
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(2714): Mysql->delete(Object(Administrador), Array)
+#4 C:\wamp\www\cake\clientes\Controller\AdministradoresController.php(141): Model->delete()
+#5 [internal function]: AdministradoresController->admin_delete('2')
+#6 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdministradoresController), Array)
+#7 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdministradoresController), Object(CakeRequest))
+#9 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-04-28 17:52:14 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Administrador.id' in 'where clause'
+Request URL: /cake/clientes/admin/administradores/delete/2
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Rol`.`i...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Rol`.`i...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Rol`.`i...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Rol), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(2834): Model->find('all', Array)
+#7 C:\wamp\www\cake\clientes\Controller\AdministradoresController.php(141): Model->deleteAll(Array)
+#8 [internal function]: AdministradoresController->admin_delete('2')
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdministradoresController), Array)
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdministradoresController), Object(CakeRequest))
+#12 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2016-04-28 17:53:00 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`brandon_clientes`.`tb_logs`, CONSTRAINT `fk_relationship_5` FOREIGN KEY (`administrador_id`) REFERENCES `tb_administradores` (`id`))
+Request URL: /cake/clientes/admin/administradores/delete/2
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('DELETE `Adminis...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\Database\Mysql.php(455): DboSource->execute('DELETE `Adminis...')
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(2714): Mysql->delete(Object(Administrador), Array)
+#4 C:\wamp\www\cake\clientes\Controller\AdministradoresController.php(141): Model->delete()
+#5 [internal function]: AdministradoresController->admin_delete('2')
+#6 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdministradoresController), Array)
+#7 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdministradoresController), Object(CakeRequest))
+#9 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-04-28 18:07:01 Error: Fatal Error (4): syntax error, unexpected 'if' (T_IF) in [C:\wamp\www\cake\clientes\View\Administradores\admin_index.ctp, line 35]
+2016-04-28 18:07:01 Error: [FatalErrorException] syntax error, unexpected 'if' (T_IF)
+Request URL: /cake/clientes/admin/administradores
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 35, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 35, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-04-29 09:25:27 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-29 09:25:27 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-29 09:25:28 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-29 09:25:28 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-29 09:26:22 Error: [MissingActionException] Action DashboardController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'DashboardController',
+  'action' => 'index',
+)
+Request URL: /cake/clientes/
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(DashboardController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-29 09:26:42 Error: [MissingActionException] Action DashboardController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'DashboardController',
+  'action' => 'index',
+)
+Request URL: /cake/clientes/
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(DashboardController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-29 09:26:45 Error: [MissingActionException] Action DashboardController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'DashboardController',
+  'action' => 'index',
+)
+Request URL: /cake/clientes/
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(DashboardController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-29 10:41:03 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes//login
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-29 10:42:57 Error: Fatal Error (4): syntax error, unexpected '(', expecting ')' in [C:\wamp\www\cake\clientes\Controller\AppController.php, line 11]
+2016-04-29 10:42:57 Error: [FatalErrorException] syntax error, unexpected '(', expecting ')'
+Request URL: /cake/clientes/admin/login
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 11, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 11, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-04-29 12:06:24 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\wamp\www\cake\clientes\Controller\AdministradoresController.php, line 25]
+2016-04-29 12:06:24 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /cake/clientes/admin/administradores/logout
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 25, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 25, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-04-29 12:13:11 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\wamp\www\cake\clientes\Controller\AdministradoresController.php, line 25]
+2016-04-29 12:13:11 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cake/clientes/admin/administradores/logout
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 25, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 25, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

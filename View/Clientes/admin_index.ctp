@@ -1,5 +1,5 @@
 <div class="page-title">
-	<h2><span class="fa fa-list"></span> Clientes</h2>
+	<h2><span class="fa fa-users"></span> Clientes</h2>
 </div>
 
 <div class="page-content-wrap">

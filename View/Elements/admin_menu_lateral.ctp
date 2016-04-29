@@ -9,15 +9,16 @@
 		</li>
 		<li class="xn-profile active">
             <div class="profile">
+            	<div class="profile-image">
+            		<?= $this->Html->link('<img class="mCS_img_loaded" src="' . $this->Session->read('Auth.Administrador.avatar').'" alt="">',
+						'/admin/administradores/perfil/' . $this->Session->read('Auth.Administrador.id'),
+						array('escape' => false)
+					); ?>
+                   
+                </div>
                 <div class="profile-data">
                     <div class="profile-data-name"><?=$this->Session->read('Auth.Administrador.nombre');?></div>
                     <div class="profile-data-title"><?=$this->Session->read('Auth.Administrador.Rol.nombre');?></div>
-                </div>
-                <div class="profile-controls">
-                	<?= $this->Html->link('<span class="fa fa-user"></span>',
-						'/admin/administradores/perfil/' . $this->Session->read('Auth.Administrador.id'),
-						array('escape' => false, 'class' => 'profile-control-left')
-					); ?>
                 </div>
             </div>                                                                        
         </li>

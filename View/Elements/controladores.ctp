@@ -3,6 +3,9 @@
 			return str_replace('Controller', '', $controlador);
 
 	}, App::objects('controller')); ?>
+<li class="xn-title">
+	Super Usuario
+</li>
 <li class="xn-openable">
 	<a href="#"><span class="fa fa-cog"></span> <span class="xn-text">Controladores</span></a>
 	<ul>

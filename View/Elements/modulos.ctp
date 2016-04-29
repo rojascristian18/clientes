@@ -1,8 +1,8 @@
 <? foreach ($modulosDisponibles as $moduloPadre) { ?>
 	<? if ( ! empty($moduloPadre['hijos']) ) { ?>
-		<li class="xn-title">
+		<!--<li class="xn-title">
 			<?=$moduloPadre['nombre'];?>
-		</li>
+		</li>-->
 		<? foreach ($moduloPadre['hijos'] as $modulo) { ?>
 		<li class="<?= ($this->Html->menuActivo(array('controller' => strtolower($modulo['Modulo']['controlador']), 'action' => 'index')) ? 'active' : ''); ?>">
 			<?= $this->Html->link(

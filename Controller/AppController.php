@@ -20,7 +20,8 @@ class AppController extends Controller
 					'fields'			=> array(
 						'username'			=> 'email',
 						'password'			=> 'clave'
-					)
+					),
+					'scope'		=>	array('Administrador.activo' => 1)
 				)
 			)
 		),
@@ -37,7 +38,7 @@ class AppController extends Controller
 		if ( ! empty($this->request->params['admin']) )
 		{
 			$this->layoutPath				= 'backend';
-			AuthComponent::$sessionKey		= 'Auth.Administrador';
+			AuthComponent::$sessionKey		= 'Auth';
 			$this->Auth->authenticate['Form']['userModel']		= 'Administrador';
 		}
 		else

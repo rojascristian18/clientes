@@ -35,6 +35,10 @@
 							<th><?= $this->Form->label('fono', 'Fono'); ?></th>
 							<td><?= $this->Form->input('fono'); ?></td>
 						</tr>
+						<tr>
+							<th><?= $this->Form->label('activo', 'Activo'); ?></th>
+							<td><?= $this->Form->input('activo'); ?></td>
+						</tr>
 					</table>
 			</div>
 		</div>

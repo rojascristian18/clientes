@@ -13,13 +13,14 @@
 		</div>
 		<div class="panel-body">
 			<div class="table-responsive">
-				<table class="table">
+				<table class="table datatable">
 					<thead>
 						<tr class="sort">
 							<th><?= $this->Paginator->sort('rol_id', 'Perfil', array('title' => 'Haz click para ordenar por este criterio')); ?></th>
 							<th><?= $this->Paginator->sort('nombre', null, array('title' => 'Haz click para ordenar por este criterio')); ?></th>
 							<th><?= $this->Paginator->sort('email', null, array('title' => 'Haz click para ordenar por este criterio')); ?></th>
 							<th><?= $this->Paginator->sort('ultimo_acceso', 'Último Acceso', array('title' => 'Haz click para ordenar por este criterio')); ?></th>
+							<th><?= $this->Paginator->sort('activo', 'Activo', array('title' => 'Haz click para ordenar por este criterio')); ?></th>
 							<th>Acciones</th>
 						</tr>
 					</thead>
@@ -30,28 +31,16 @@
 							<td><?= h($administrador['Administrador']['nombre']); ?>&nbsp;</td>
 							<td><?= h($administrador['Administrador']['email']); ?>&nbsp;</td>
 							<td><?= h($administrador['Administrador']['ultimo_acceso']); ?>&nbsp;</td>
+							<td><?= ($administrador['Administrador']['activo'] ? '<i class="fa fa-check"></i>' : '<i class="fa fa-remove"></i>'); ?>&nbsp;</td>
 							<td>
 								<?= $this->Html->link('<i class="fa fa-edit"></i> Editar', array('action' => 'edit', $administrador['Administrador']['id']), array('class' => 'btn btn-xs btn-info', 'rel' => 'tooltip', 'title' => 'Editar este registro', 'escape' => false)); ?>
-								<a href="#" class="btn btn-xs btn-danger confirmar-eliminacion mb-control" data-box="#mb-confirm-delete" rel="tooltip" title="Eliminar este registro"><i class="fa fa-remove"></i> Eliminar</a>
+								<? if ($administrador['Administrador']['activo'] == 1) { ?>
+									<?= $this->Form->postLink('<i class="fa fa fa-eye-slash"></i> Desactivar', array('action' => 'desactivar', $administrador['Administrador']['id']), array('class' => 'btn btn-warning btn-xs', 'rel' => 'tooltip', 'title' => 'Desactivar este registro', 'escape' => false)); ?>
+								<? }else{ ?>
+									<?= $this->Form->postLink('<i class="fa fa-eye"></i> Activar', array('action' => 'activar', $administrador['Administrador']['id']), array('class' => 'btn btn-primary btn-xs', 'rel' => 'tooltip', 'title' => 'Activar este registro', 'escape' => false)); ?>
+								<?	} ?>
 								
 							</td>
-							<div class="message-box message-box-warning animated fadeIn" data-sound="alert" id="mb-confirm-delete">
-								<div class="mb-container">
-									<div class="mb-middle">
-										<div class="mb-title"><span class="fa fa-sign-out"></span>¿Eliminar <strong>registro</strong>?</div>
-										<div class="mb-content">
-											<p>¿Seguro que desea eliminar este registro?</p>
-											<p>Presiona NO para continuar trabajando y SI para eliminar.</p>
-										</div>
-										<div class="mb-footer">
-											<div class="pull-right">
-												<?= $this->Form->postLink('<i class="fa fa-remove"></i> Eliminar', array('action' => 'delete', $administrador['Administrador']['id']), array('class' => 'btn btn-success btn-lg', 'rel' => 'tooltip', 'title' => 'Eliminar este registro', 'escape' => false)); ?>
-												<button class="btn btn-default btn-lg mb-control-close">No</button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
 						</tr>
 						<?php endforeach; ?>
 					</tbody>
@@ -59,13 +48,5 @@
 			</div>
 		</div>
 	</div>
-</div>
-
-<div class="pull-right">
-	<ul class="pagination">
-		<?= $this->Paginator->prev('« Anterior', array('tag' => 'li'), null, array('tag' => 'li', 'disabledTag' => 'a', 'class' => 'first disabled hidden')); ?>
-		<?= $this->Paginator->numbers(array('tag' => 'li', 'currentTag' => 'a', 'modulus' => 2, 'currentClass' => 'active', 'separator' => '')); ?>
-		<?= $this->Paginator->next('Siguiente »', array('tag' => 'li'), null, array('tag' => 'li', 'disabledTag' => 'a', 'class' => 'last disabled hidden')); ?>
-	</ul>
 </div>
 

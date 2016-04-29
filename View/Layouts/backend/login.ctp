@@ -20,6 +20,9 @@
 		<?= $this->fetch('meta'); ?>
 		<?= $this->fetch('css'); ?>
 		<?= $this->fetch('script'); ?>
+		<meta name="google-signin-client_id" content="940098568661-eugvnkatiq01cj679cur3c8f2dfa0if2.apps.googleusercontent.com">
+		<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+
 	</head>
     <body>
 		<div class="login-container">
