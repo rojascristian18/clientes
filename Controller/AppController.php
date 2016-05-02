@@ -80,7 +80,12 @@ class AppController extends Controller
 		*	Funciones personalizadas
 		*/
 		$modulosDisponibles = $this->getModuleByRole();
-		$this->set(compact('modulosDisponibles'));
+		$totalActivos		= $this->obtenerClientesActivos();
+		$totalDesactivos	= $this->obtenerClientesInactivos();
+		$totalClientes		= $this->obtenerClientes();
+		$totalNuevos		= $this->obtenerClientesNuevos();
+		$clienteAdmin 		= $this->obtenerClientesAdministrador();
+		$this->set(compact('modulosDisponibles','totalActivos','totalDesactivos','totalClientes','totalNuevos','clienteAdmin'));
 	}
 
 	/**
@@ -146,10 +151,65 @@ class AppController extends Controller
 
 	/**
 
+		Obtener clientes activos
+
+	*/
+	private function obtenerClientesActivos(){
+		$this->Cliente = $this->instanceModel('Cliente');
+		return $this->Cliente->find('count',array('conditions' => array('activo' => 1)));
+	}
+
+
+	/**
+
+		Obtener clientes inactivos
+
+	*/
+	private function obtenerClientesInactivos(){
+		$this->Cliente = $this->instanceModel('Cliente');
+		return $this->Cliente->find('count',array('conditions' => array('activo' => 0)));
+	}
+
+
+	/**
+
+		Obtener total clientes
+
+	*/
+	private function obtenerClientes(){
+		$this->Cliente = $this->instanceModel('Cliente');
+		return $this->Cliente->find('count');
+	}
+
+
+	/**
+
+		Obtener total clientes
+
+	*/
+	private function obtenerClientesNuevos(){
+		$this->Cliente = $this->instanceModel('Cliente');
+		return $this->Cliente->find('count',array('conditions' => array('creado >=' => date('Y-m'))));
+	}
+
+
+	/**
+
+		Obtener total clientes por Administrador
+
+	*/
+	private function obtenerClientesAdministrador(){
+		$this->Administrador = $this->instanceModel('Administrador');
+		return $this->Administrador->find('all',array('contain' => array('Cliente')));
+	}
+
+
+	/**
+
 		Instanciar un modelo.
 		
 	*/
-	private function instanceModel( $model ){
+	protected function instanceModel( $model ){
 		return ClassRegistry::init( $model );
 	}
 }

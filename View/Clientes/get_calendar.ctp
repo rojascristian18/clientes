@@ -17,7 +17,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					<? for ($i=1; $i < 5; $i++) {
+					<? for ($i=1; $i < 6; $i++) {
 						echo "<tr><td><span class='semana'>Semana ".$i."</span></td>";
 						for ($j=1; $j < 6; $j++) {
 							echo "<td><div class='calendar-box' data-semana='".$i."' data-dia='".$j."'>";
@@ -41,7 +41,7 @@
 			    <div class="modal-content">
 			      <div class="modal-header">
 			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			        <h4 class="modal-title">Registrar estado</h4>
+			        <h4 class="modal-title">Registrar evento</h4>
 			      </div>
 			      <div class="modal-body">
 			        
@@ -109,7 +109,4 @@
 		modal.modal('show');
 	}
 
-	function modificarEvento(x,y,value_name,value_comment){
-
-	}
 </script>

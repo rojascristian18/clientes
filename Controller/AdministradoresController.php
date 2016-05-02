@@ -130,8 +130,11 @@ class AdministradoresController extends AppController
 		}
 		
 		$roles	= $this->Administrador->Rol->find('list');
+		$clientesAsignados = $this->Administrador->find('first',array(
+			'conditions' => array('Administrador.id' => $id),
+			'contain' => array('Cliente')));
 		$clientes	= $this->Administrador->Cliente->find('list');
-		$this->set(compact('roles', 'clientes'));
+		$this->set(compact('roles', 'clientes','clientesAsignados'));
 	}
 
 	public function admin_delete($id = null)
@@ -201,6 +204,7 @@ class AdministradoresController extends AppController
 		$this->set(compact('datos', 'campos', 'modelo'));
 	}
 
+
 	public function admin_perfil($id = null) {
 		$this->Administrador->id = $id;
 		if ( ! $this->Administrador->exists() )
@@ -213,4 +217,5 @@ class AdministradoresController extends AppController
 		}
 		
 	}
+
 }

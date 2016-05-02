@@ -16,7 +16,7 @@
 				<table class="table">
 					<thead>
 						<tr class="sort">
-							<th><?= $this->Paginator->sort('administrador_id', null, array('title' => 'Haz click para ordenar por este criterio')); ?></th>
+							<th><?= $this->Paginator->sort('Administrador', null, array('title' => 'Haz click para ordenar por este criterio')); ?></th>
 							<th><?= $this->Paginator->sort('comentario', null, array('title' => 'Haz click para ordenar por este criterio')); ?></th>
 							<th><?= $this->Paginator->sort('fecha', null, array('title' => 'Haz click para ordenar por este criterio')); ?></th>
 							<th><?= $this->Paginator->sort('realizado', null, array('title' => 'Haz click para ordenar por este criterio')); ?></th>
@@ -26,7 +26,7 @@
 					<tbody>
 						<?php foreach ( $logs as $log ) : ?>
 						<tr>
-							<td><?= $this->Html->link($log['Administrador']['id'], array('controller' => 'administradores', 'action' => 'edit', $log['Administrador']['id'])); ?></td>
+							<td><?= $this->Html->link($log['Administrador']['nombre'], array('controller' => 'administradores', 'action' => 'edit', $log['Administrador']['id'])); ?></td>
 							<td><?= h($log['Log']['comentario']); ?>&nbsp;</td>
 							<td><?= h($log['Log']['fecha']); ?>&nbsp;</td>
 							<td><?= ($log['Log']['realizado'] ? '<i class="fa fa-check"></i>' : '<i class="fa fa-remove"></i>'); ?>&nbsp;</td>

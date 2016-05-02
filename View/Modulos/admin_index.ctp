@@ -16,6 +16,7 @@
 				<table class="table">
 					<thead>
 						<tr class="sort">
+							<th><?= $this->Paginator->sort('nombre', null, array('title' => 'Haz click para ordenar por este criterio')); ?></th>
 							<th><?= $this->Paginator->sort('controlador', null, array('title' => 'Haz click para ordenar por este criterio')); ?></th>
 							<th><?= $this->Paginator->sort('parent_id', 'Modulo padre', array('title' => 'Haz click para ordenar por este criterio')); ?></th>
 							<th><?= $this->Paginator->sort('icono', null, array('title' => 'Haz click para ordenar por este criterio')); ?></th>
@@ -26,6 +27,7 @@
 					<tbody>
 						<?php foreach ( $modulos as $modulo ) : ?>
 						<tr>
+							<td><?= h($modulo['Modulo']['nombre']); ?>&nbsp;</td>
 							<td><?= h($modulo['Modulo']['controlador']); ?>&nbsp;</td>
 							<td><?= $this->Html->link($modulo['ParentModulo']['id'], array('controller' => 'modulos', 'action' => 'edit', $modulo['ParentModulo']['id'])); ?></td>
 							<td><?= h($modulo['Modulo']['icono']); ?>&nbsp;</td>

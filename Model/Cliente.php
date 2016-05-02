@@ -174,4 +174,24 @@ class Cliente extends AppModel
 			'insertQuery'			=> ''
 		)
 	);
+	public $belongsTo = array(
+		'Vendedor' => array(
+			'className'				=> 'Vendedor',
+			'foreignKey'			=> 'vendedor_id',
+			'conditions'			=> '',
+			'fields'				=> '',
+			'order'					=> '',
+			'counterCache'			=> true,
+			//'counterScope'			=> array('Asociado.modelo' => 'Cliente')
+		),
+		'Rubro' => array(
+			'className'				=> 'Rubro',
+			'foreignKey'			=> 'rubro_id',
+			'conditions'			=> '',
+			'fields'				=> '',
+			'order'					=> '',
+			'counterCache'			=> true,
+			//'counterScope'			=> array('Asociado.modelo' => 'Cliente')
+		)
+	);
 }

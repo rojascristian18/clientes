@@ -13,16 +13,20 @@
 		<td><?= $this->Form->input('observacion'); ?></td>
 	</tr>
 </table>
-
+<div class="pull-left">
+	<a href="" id="eliminarEvento" class="btn btn-danger btn-xs"><span class="fa fa-remove"></span> Eliminar evento</a>
+</div>
 <div class="pull-right">
 	<input type="submit" id="btn_guardar_evento" class="btn btn-primary esperar-carga" autocomplete="off" data-loading-text="Espera un momento..." value="Guardar cambios">
 	<?= $this->Html->link('Cancelar', array(), array('class' => 'btn btn-danger','data-dismiss' => 'modal')); ?>
 </div>
 <?= $this->Form->end(); ?>
 <script type="text/javascript">
+
+	var id 	= $('#CalendarioId').val();
+
 	$('#btn_guardar_evento').on('click', function(e){
 		e.preventDefault();
-		var id 	= $('#CalendarioId').val();
 		var url = webroot + "calendarios/saveEventById";
 		
 		var data = "";
@@ -42,6 +46,21 @@
 			},3000);
 		});
 	});
+
+
+	$('#eliminarEvento').on('click', function(event){
+		event.preventDefault();
+		var url = webroot + "calendarios/deleteEvent/" + id;
+		$.get( url , function( response ){
+			$('#confirmar .modal-body').html(response);
+			var idCliente = $('#ClienteId').val();
+			getCalendar(idCliente);
+			setTimeout(function(){
+				$('#confirmar').modal('hide');
+			},3000);
+		});
+	});
+
 
 	function getCalendar(cliente){
 		var url = webroot + "clientes/getCalendar/" + cliente;

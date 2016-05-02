@@ -43,6 +43,14 @@
 							<th><?= $this->Form->label('activo', 'Activo'); ?></th>
 							<td><?= $this->Form->input('activo', array('class' => 'icheckbox')); ?></td>
 						</tr>
+						<tr>
+							<th><?= $this->Form->label('vendedor_id', 'Vendedor'); ?></th>
+							<td><?= $this->Form->input('vendedor_id',array('empty' => 'Seleccione vendedor')); ?></td>
+						</tr>
+						<tr>
+							<th><?= $this->Form->label('rubro_id', 'Rubro'); ?></th>
+							<td><?= $this->Form->input('rubro_id',array('empty' => 'Seleccione rubro')); ?></td>
+						</tr>
 					</table>
 
 					<div class="pull-right">

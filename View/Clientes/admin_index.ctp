@@ -13,6 +13,7 @@
 				</div>
 				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 					<div class="btn-group pull-right">
+						<?= $this->Html->link('<i class="fa fa-user"></i> Asignar Clientes', array('action' => 'asignar'), array('class' => 'btn btn-default', 'escape' => false)); ?>
 						<?= $this->Html->link('<i class="fa fa-plus"></i> Nuevo Cliente', array('action' => 'add'), array('class' => 'btn btn-success', 'escape' => false)); ?>
 						<?= $this->Html->link('<i class="fa fa-file-excel-o"></i> Exportar a Excel', array('action' => 'exportar'), array('class' => 'btn btn-primary', 'escape' => false)); ?>
 					</div>
@@ -44,26 +45,13 @@
 							<td><?= ($cliente['Cliente']['activo'] ? '<i class="fa fa-check"></i>' : '<i class="fa fa-remove"></i>'); ?>&nbsp;</td>
 							<td>
 								<?= $this->Html->link('<i class="fa fa-edit"></i> Editar', array('action' => 'edit', $cliente['Cliente']['id']), array('class' => 'btn btn-xs btn-info', 'rel' => 'tooltip', 'title' => 'Editar este registro', 'escape' => false)); ?>
-								<a href="#" class="btn btn-xs btn-danger confirmar-eliminacion mb-control" data-box="#mb-confirm-delete" rel="tooltip" title="Eliminar este registro"><i class="fa fa-remove"></i> Eliminar</a>
+								<? if ($cliente['Cliente']['activo'] == 1) { ?>
+									<?= $this->Form->postLink('<i class="fa fa fa-eye-slash"></i> Desactivar', array('action' => 'desactivar', $cliente['Cliente']['id']), array('class' => 'btn btn-warning btn-xs', 'rel' => 'tooltip', 'title' => 'Desactivar este registro', 'escape' => false)); ?>
+								<? }else{ ?>
+									<?= $this->Form->postLink('<i class="fa fa-eye"></i> Activar', array('action' => 'activar', $cliente['Cliente']['id']), array('class' => 'btn btn-primary btn-xs', 'rel' => 'tooltip', 'title' => 'Activar este registro', 'escape' => false)); ?>
+								<?	} ?>
 							</td>
 						</tr>
-						<div class="message-box message-box-warning animated fadeIn" data-sound="alert" id="mb-confirm-delete">
-								<div class="mb-container">
-									<div class="mb-middle">
-										<div class="mb-title"><span class="fa fa-sign-out"></span>¿Eliminar <strong>registro</strong>?</div>
-										<div class="mb-content">
-											<p>¿Seguro que desea eliminar este registro?</p>
-											<p>Presiona NO para continuar trabajando y SI para eliminar.</p>
-										</div>
-										<div class="mb-footer">
-											<div class="pull-right">
-												<?= $this->Form->postLink('<i class="fa fa-remove"></i> Eliminar', array('action' => 'delete', $cliente['Cliente']['id']), array('class' => 'btn btn-success btn-lg', 'rel' => 'tooltip', 'title' => 'Eliminar este registro', 'escape' => false)); ?>
-												<button class="btn btn-default btn-lg mb-control-close">No</button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
 						<?php endforeach; ?>
 					</tbody>
 				</table>

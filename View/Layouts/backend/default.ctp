@@ -27,9 +27,13 @@
 			'/backend/js/plugins/bootstrap/bootstrap-select',
 			'/backend/js/plugins/icheck/icheck.min',
 			'/backend/js/plugins/datatables/jquery.dataTables.min',
+			'/backend/js/plugins/owl/owl.carousel.min',
+			'/backend/js/plugins/morris/raphael-min',
+			'/backend/js/plugins/morris/morris.min',
 			//'/backend/js/custom',
 			'/backend/js/sitio',
-			'/backend/js/plugins'
+			'/backend/js/plugins',
+			'/backend/js/actions'
 			/*
 			'/backend/js/plugins/bootstrap/bootstrap-datepicker',
 

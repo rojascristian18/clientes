@@ -156,5 +156,24 @@ class CalendariosController extends AppController
 		$clientes	= $this->Calendario->Cliente->find('list');
 		$this->set(compact('clientes','idCliente','semana','dia'));
 	}
+
+	public function deleteEvent($id = null)
+	{
+		$this->Calendario->id = $id;
+		if ( ! $this->Calendario->exists() )
+		{
+			echo "<h3 class='text-warning'>El evento no existe</h3>";
+			exit;
+		}
+
+		$this->request->onlyAllow('get', 'deleteEvent');
+		if ( $this->Calendario->delete() )
+		{
+			echo "<h3 class='text-success'>Evento eliminado con éxito</h3>";
+			exit;
+		}
+		echo "<h3 class='text-warning'>Error al eliminar</h3>";
+			exit;
+	}
 	
 }

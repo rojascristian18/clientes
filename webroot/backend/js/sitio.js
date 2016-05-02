@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	var titulo_modal_original = $('#confirmar .modal-title').text();
+
 	/**
 	 * Agregar un nuevo clon
 	 */
@@ -114,6 +115,35 @@ $(document).ready(function(){
 
 				$that.attr('name', nombre);
 			});
+		});
+	}
+
+	/**
+	 * Dashboard - Grafico 1
+	 */
+	if ( $('#dashboard-line-1').length )
+	{
+		Morris.Line(
+		{
+			element			: 'dashboard-line-1',
+			data			: [
+				{ y: '2014-10-10', a: 2,b: 4},
+				{ y: '2014-10-11', a: 4,b: 6},
+				{ y: '2014-10-12', a: 7,b: 10},
+				{ y: '2014-10-13', a: 5,b: 7},
+				{ y: '2014-10-14', a: 6,b: 9},
+				{ y: '2014-10-15', a: 9,b: 12},
+				{ y: '2014-10-16', a: 18,b: 20}
+			],
+			xkey			: 'y',
+			ykeys			: ['a','b'],
+			labels			: ['Sales','Event'],
+			resize			: true,
+			hideHover		: true,
+			xLabels			: 'day',
+			gridTextSize	: '10px',
+			lineColors		: ['#E1411E','#FFD559'],
+			gridLineColor	: '#E5E5E5'
 		});
 	}
 

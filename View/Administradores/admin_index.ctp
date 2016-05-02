@@ -39,7 +39,6 @@
 								<? }else{ ?>
 									<?= $this->Form->postLink('<i class="fa fa-eye"></i> Activar', array('action' => 'activar', $administrador['Administrador']['id']), array('class' => 'btn btn-primary btn-xs', 'rel' => 'tooltip', 'title' => 'Activar este registro', 'escape' => false)); ?>
 								<?	} ?>
-								
 							</td>
 						</tr>
 						<?php endforeach; ?>

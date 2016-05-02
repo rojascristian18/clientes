@@ -32,8 +32,8 @@
 .error-message{background-color: #B64645; color: #fff; font-size: 11px; font-weight: bold;padding: 5px;}
 #ClienteAdminAddForm textarea{resize:none;height: 60px;}
 #ClienteAdminEditForm textarea{resize:none;height: 60px;}
-.calendar-box{height: 30px; display: block;width: 100%;cursor: pointer;}
-.calendar-box .modificar label {color: rgb(255, 255, 255);background-color: #5CAE10; width: auto;padding: 5px 10px;border-radius: 3px;margin: 0;font-size: 1.2em; cursor: pointer;}
+.calendar-box{min-height: 30px; display: block;width: 100%;cursor: pointer;position: relative;}
+.calendar-box .modificar label {color: rgb(255, 255, 255);background-color: #5CAE10;word-wrap: break-word; width: 100%;padding: 5px 10px;border-radius: 3px;margin: 0;font-size: 1.2em; cursor: pointer;text-align: center;}
 .calendario .semana{line-height: 30px;color: #A4A4A4;font-weight: bold;}
 .calendario tr > td:first-child{background-color: #EAEAEA;border-color: #fff;width: 150px;max-width: 100%;}
 .calendario tr > td{width: auto;max-width: 300px;}
@@ -41,3 +41,22 @@
 #confirmar .modal-body {background-color: #fff;}
 #confirmar .modal-header {background: #539E1F;border:none;}
 #confirmar .modal-title {color: #fff;}
+.dataTables_length label, .dataTables_filter label {line-height: 30px;font-weight: bold;text-transform: uppercase;padding: 10px;background-color: #2AB2E1;color: #fff;}
+.calendar-box:hover{background-color: #E3E3E3;
+-webkit-transition: background-color .25s ease-out;
+   -moz-transition: background-color .25s ease-out;
+    -ms-transition: background-color .25s ease-out;
+     -o-transition: background-color .25s ease-out;
+        transition: background-color .25s ease-out;}
+.calendario th{text-align: center;}
+/*
+
+	Media Query
+
+*/
+
+@media screen and (max-width: 768px){
+	.dataTables_filter {width: 100%;}
+	.dataTables_length label, .dataTables_filter label {width: 100%;}
+	.dataTables_filter label input {width: 80%;}
+}

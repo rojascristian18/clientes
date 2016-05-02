@@ -17,13 +17,132 @@ class ClientesController extends AppController
 			            )
 
 		        	)
-				)
+				),
+				'order' => array('activo DESC')
 			));
 		}else{
-			$clientes	= $this->Cliente->find('all');
+			$clientes	= $this->Cliente->find('all',array('order' => array('activo DESC')));
 		}
-		//$clientes	= $this->paginate();
+		
 		$this->set(compact('clientes'));
+	}
+
+	public function admin_asignar()
+	{
+		if ($this->Session->read('Auth.Administrador.Rol.id') == 3) {
+			$clientes		= $this->Cliente->find('all',array(
+				'joins' 			=> array(
+					array(
+			            'table' => 'administradores_clientes',
+			            'alias' => 'AdminCliente',
+			            'type'  => 'INNER',
+			            'conditions' => array(
+			                'AdminCliente.cliente_id = Cliente.id',
+			                'AdminCliente.administrador_id' => $this->Auth->user('id')
+			            )
+
+		        	)
+				),
+				'order' => array('Cliente.activo DESC'),
+				'conditions' => array('Cliente.activo' => 1)
+			));
+
+		}else{
+
+			if ( $this->request->is('post') )
+			{	
+				if ( !isset($this->request->data['Filtro'])) {
+
+					$clienteId = Hash::extract($this->request->data,'Cliente.{n}.id');
+
+					$this->request->data['Administrador']['id'] = $this->request->data['Asignar']['asignados'];
+
+					unset($this->request->data['Asignar']);
+
+					/*$this->Cliente->AdministradoresCliente->deleteAll(
+						array('administrador_id' => $this->request->data['Administrador']['id'],
+							'cliente_id' => $clienteId));
+					*/
+					$this->Cliente->AdministradoresCliente->updateAll(array('administrador_id' => $this->request->data['Administrador']['id']),array('cliente_id' => $clienteId));
+					
+					$this->Session->setFlash('Clientes reasigandos.', null, array(), 'success');
+					$this->redirect(array('action' => 'index'));
+
+				}else{
+
+					if ( $this->request->data['Filtro']['admines'] != null && $this->request->data['Filtro']['Rubro'] != null) {
+						$clientes		= $this->Cliente->find('all',array(
+							'joins' 			=> array(
+								array(
+						            'table' => 'administradores_clientes',
+						            'alias' => 'AdminCliente',
+						            'type'  => 'INNER',
+						            'conditions' => array(
+						                'AdminCliente.cliente_id = Cliente.id',
+						                'AdminCliente.administrador_id' => $this->request->data['Filtro']['admines']
+						            )
+
+					        	)
+							),
+							'order' => array('Cliente.activo DESC'),
+							'conditions' => array('Cliente.activo' => 1,'Cliente.rubro_id' => $this->request->data['Filtro']['Rubro']),
+							'contain' 	=> array('Administrador')
+						));
+					}
+
+					if ($this->request->data['Filtro']['admines'] != null && $this->request->data['Filtro']['Rubro'] == null) {
+						$clientes		= $this->Cliente->find('all',array(
+							'joins' 			=> array(
+								array(
+						            'table' => 'administradores_clientes',
+						            'alias' => 'AdminCliente',
+						            'type'  => 'INNER',
+						            'conditions' => array(
+						                'AdminCliente.cliente_id = Cliente.id',
+						                'AdminCliente.administrador_id' => $this->request->data['Filtro']['admines']
+						            )
+
+					        	)
+							),
+							'order' => array('Cliente.activo DESC'),
+							'conditions' => array('Cliente.activo' => 1),
+							'contain' 	=> array('Administrador')
+						));
+					}
+
+					if ($this->request->data['Filtro']['admines'] == null && $this->request->data['Filtro']['Rubro'] != null) {
+						$clientes		= $this->Cliente->find('all',array(
+							'order' => array('Cliente.activo DESC'),
+							'conditions' => array('Cliente.activo' => 1,'Cliente.rubro_id' => $this->request->data['Filtro']['Rubro']),
+							'contain' 	=> array('Administrador')
+						));
+					}
+
+					if ($this->request->data['Filtro']['admines'] == null && $this->request->data['Filtro']['Rubro'] == null) {
+						$clientes		= $this->Cliente->find('all',array(
+							'order' => array('Cliente.activo DESC'),
+							'conditions' => array('Cliente.activo' => 1),
+							'contain' 	=> array('Administrador')
+						));
+					}
+				}
+			}else{
+
+				$clientes = $this->Cliente->find('all',array(
+					'order' => array('Cliente.activo DESC'),
+					'conditions' => array('Cliente.activo' => 1),
+					'contain' 	=> array('Administrador')
+				));
+
+			}
+
+			$admines = $this->Cliente->Administrador->find('list',array('condtions' => array('activo' => 1)));
+			$rubros = $this->Cliente->Rubro->find('list');
+			$asignados = $this->Cliente->Administrador->find('list',array('condtions' => array('activo' => 1)));
+			
+		}
+		
+		$this->set(compact('clientes','admines','asignados','rubros'));
 	}
 
 	public function admin_add()
@@ -76,8 +195,10 @@ class ClientesController extends AppController
 				$this->Session->setFlash('Error al guardar el registro. Por favor intenta nuevamente.', null, array(), 'danger');
 			}
 		}
+		$vendedores	= $this->Cliente->Vendedor->find('list');
+		$rubros	= $this->Cliente->Rubro->find('list');
 		$administradores	= $this->Cliente->Administrador->find('list');
-		$this->set(compact('administradores','contactos'));
+		$this->set(compact('administradores','contactos','vendedores','rubros'));
 	}
 
 	public function admin_edit($id = null)
@@ -172,8 +293,49 @@ class ClientesController extends AppController
 		$designados = $this->Cliente->find('first', array(
 			'conditions' 	=> array('Cliente.id' => $id),
 			'contain' 		=> array('Administrador')) );
+		$vendedores	= $this->Cliente->Vendedor->find('list');
+		$rubros	= $this->Cliente->Rubro->find('list');
 		$administradores	= $this->Cliente->Administrador->find('list');
-		$this->set(compact('administradores','contactos','designados'));
+		$this->set(compact('administradores','contactos','designados','vendedores','rubros'));
+	}
+
+
+	public function admin_desactivar($id = null)
+	{
+		$this->Cliente->id = $id;
+		if ( ! $this->Cliente->exists() )
+		{
+			$this->Session->setFlash('Cliente inválido.', null, array(), 'danger');
+			$this->redirect(array('action' => 'index'));
+		}
+		
+		if ( $this->Cliente->saveField('activo', 0) )
+		{
+			$this->Session->setFlash('Cliente desactivado correctamente.', null, array(), 'success');
+			$this->redirect(array('action' => 'index'));
+		}
+		$this->Session->setFlash('Error al desactivar el cliente. Por favor intenta nuevamente.', null, array(), 'danger');
+		$this->redirect(array('action' => 'index'));
+	}
+
+
+	public function admin_activar($id = null)
+	{
+		$this->Cliente->id = $id;
+		if ( ! $this->Cliente->exists() )
+		{
+			$this->Session->setFlash('Cliente inválido.', null, array(), 'danger');
+			$this->redirect(array('action' => 'index'));
+		}
+
+		
+		if ( $this->Cliente->saveField('activo', 1) )
+		{
+			$this->Session->setFlash('Cliente activado correctamente.', null, array(), 'success');
+			$this->redirect(array('action' => 'index'));
+		}
+		$this->Session->setFlash('Error al eliminar el Cliente. Por favor intenta nuevamente.', null, array(), 'danger');
+		$this->redirect(array('action' => 'index'));
 	}
 
 	public function admin_delete($id = null)
@@ -212,5 +374,34 @@ class ClientesController extends AppController
 				'contain'		=> array('Calendario')
 			));
 		$this->layout = 'ajax';
+	}
+
+	public function admin_getClientHistory(){
+		$clientes = $this->Cliente->query("SELECT COUNT(id),MONTH(creado),nombre FROM tb_clientes WHERE activo=1 GROUP BY MONTH(creado)");
+		$arrayMeses = array(
+			array('numero' => 1,'nombre' 	=> 'Enero'),
+			array('numero' => 2,'nombre' 	=> 'Febrero'),
+			array('numero' => 3,'nombre' 	=> 'Marzo'),
+			array('numero' => 4,'nombre' 	=> 'Abril'),
+			array('numero' => 5,'nombre' 	=> 'Mayo'),
+			array('numero' => 6,'nombre' 	=> 'Junio'),
+			array('numero' => 7,'nombre' 	=> 'Julio'),
+			array('numero' => 8,'nombre' 	=> 'Agosto'),
+			array('numero' => 9,'nombre' 	=> 'Septiembre'),
+			array('numero' => 10,'nombre' 	=> 'Octubre'),
+			array('numero' => 11,'nombre' 	=> 'Noviembre'),
+			array('numero' => 12,'nombre' 	=> 'Diciembre')
+		);
+
+		foreach ($arrayMeses as $indixe => $registro) {
+			foreach ($clientes as $key => $value) {
+				if ($value[$key]['MONTH(creado)'] == $registro['numero']) {
+					echo $value['tb_clientes']['nombre'];
+					echo $registro['numero'];
+				}
+			}
+		}
+
+		prx($clientes);
 	}
 }
