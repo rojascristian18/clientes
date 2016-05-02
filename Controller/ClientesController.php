@@ -3,7 +3,7 @@ App::uses('AppController', 'Controller');
 class ClientesController extends AppController
 {
 	public function admin_index()
-	{
+	{	
 		if ($this->Session->read('Auth.Administrador.Rol.id') == 3) {
 			$clientes		= $this->Cliente->find('all',array(
 				'joins' 			=> array(
@@ -66,7 +66,7 @@ class ClientesController extends AppController
 					$this->Cliente->AdministradoresCliente->updateAll(array('administrador_id' => $this->request->data['Administrador']['id']),array('cliente_id' => $clienteId));
 					
 					$this->Session->setFlash('Clientes reasigandos.', null, array(), 'success');
-					$this->redirect(array('action' => 'index'));
+					$this->redirect(array('action' => 'asignar'));
 
 				}else{
 

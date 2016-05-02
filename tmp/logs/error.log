@@ -5447,3 +5447,31 @@ Stack Trace:
 #3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2016-05-02 17:46:55 Error: [InvalidArgumentException] Invalid Parameter 1, should be dot separated path or array.
+Request URL: /cake/clientes/admin/clientes
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\CakeSession.php(389): Hash::get(Array, true)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\View\Helper\SessionHelper.php(43): CakeSession::read(true)
+#2 C:\wamp\www\cake\clientes\View\Clientes\admin_index.ctp(16): SessionHelper->read(true)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\View\View.php(971): include('C:\\wamp\\www\\cak...')
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\View\View.php(933): View->_evaluate('C:\\wamp\\www\\cak...', Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\View\View.php(473): View->_render('C:\\wamp\\www\\cak...')
+#6 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#7 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#9 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-05-02 17:47:09 Error: [InvalidArgumentException] Invalid Parameter 1, should be dot separated path or array.
+Request URL: /cake/clientes/admin/clientes
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\CakeSession.php(389): Hash::get(Array, true)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\View\Helper\SessionHelper.php(43): CakeSession::read(true)
+#2 C:\wamp\www\cake\clientes\View\Clientes\admin_index.ctp(16): SessionHelper->read(true)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\View\View.php(971): include('C:\\wamp\\www\\cak...')
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\View\View.php(933): View->_evaluate('C:\\wamp\\www\\cak...', Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\View\View.php(473): View->_render('C:\\wamp\\www\\cak...')
+#6 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#7 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#9 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}

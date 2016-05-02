@@ -13,7 +13,9 @@
 				</div>
 				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 					<div class="btn-group pull-right">
-						<?= $this->Html->link('<i class="fa fa-user"></i> Asignar Clientes', array('action' => 'asignar'), array('class' => 'btn btn-default', 'escape' => false)); ?>
+						<? if ($this->Session->read('Auth.Rol.id') != 3 ) { ?>
+							<?= $this->Html->link('<i class="fa fa-user"></i> Asignar Clientes', array('action' => 'asignar'), array('class' => 'btn btn-default', 'escape' => false)); ?>
+						<? } ?>
 						<?= $this->Html->link('<i class="fa fa-plus"></i> Nuevo Cliente', array('action' => 'add'), array('class' => 'btn btn-success', 'escape' => false)); ?>
 						<?= $this->Html->link('<i class="fa fa-file-excel-o"></i> Exportar a Excel', array('action' => 'exportar'), array('class' => 'btn btn-primary', 'escape' => false)); ?>
 					</div>

@@ -38,7 +38,7 @@ class AppController extends Controller
 		if ( ! empty($this->request->params['admin']) )
 		{
 			$this->layoutPath				= 'backend';
-			AuthComponent::$sessionKey		= 'Auth';
+			AuthComponent::$sessionKey		= 'Auth.Administrador';
 			$this->Auth->authenticate['Form']['userModel']		= 'Administrador';
 		}
 		else

@@ -29,7 +29,7 @@ class AdministradoresController extends AppController
 				$data['Administrador']['Rol']['id'] = $data['Rol']['id'];
 				$data['Administrador']['Rol']['nombre'] = $data['Rol']['nombre'];
 
-				if ( $this->Auth->login($data) ) {	
+				if ( $this->Auth->login($data['Administrador']) ) {	
 					$this->Administrador->id = $this->Session->read('Auth.Administrador.id');
 					$this->Administrador->saveField('ultimo_acceso', date('Y-m-d H:m:s'));
 
