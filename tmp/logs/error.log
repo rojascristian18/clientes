@@ -5924,3 +5924,32 @@ Request URL: /cake/clientes/favicon.ico
 Stack Trace:
 #0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2016-05-05 11:23:43 Error: Fatal Error (4): syntax error, unexpected '[' in [C:\wamp\www\cake\clientes\Model\Administrador.php, line 152]
+2016-05-05 11:23:43 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /cake/clientes/admin/administradores/perfil/2
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 152)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 152, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 152, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-05 11:23:45 Error: Fatal Error (4): syntax error, unexpected '[' in [C:\wamp\www\cake\clientes\Model\Administrador.php, line 152]
+2016-05-05 11:23:45 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /cake/clientes/clientes/getCalendar/undefined
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 152)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 152, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 152, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-05 11:44:43 Error: [MissingControllerException] Controller class PerfilController could not be found.
+Exception Attributes: array (
+  'class' => 'PerfilController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/admin/perfil
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

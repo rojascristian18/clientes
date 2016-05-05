@@ -11,7 +11,11 @@
             <div class="profile">
             	<div class="profile-image">
             		<? if ($this->Session->read('Auth.Administrador.google_imagen') == "") { ?>
-            			<?=$this->Html->image('logo_user.jpg', array('alt' => 'Perfil','class' => 'mCS_img_loaded'));?>
+	            			<?= $this->Html->link($this->Html->image('logo_user.jpg', array('alt' => 'Perfil','class' => 'mCS_img_loaded')),
+								'/admin/administradores/perfil/' . $this->Session->read('Auth.Administrador.id'),
+								array('escape' => false)
+						); ?>
+            			
             		<? }else{ ?>
 						<?= $this->Html->link('<img class="mCS_img_loaded" src="' . $this->Session->read('Auth.Administrador.google_imagen').'" alt="">',
 							'/admin/administradores/perfil/' . $this->Session->read('Auth.Administrador.id'),

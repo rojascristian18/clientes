@@ -309,13 +309,65 @@ class AdministradoresController extends AppController
 
 	public function admin_perfil($id = null) {
 		$this->Administrador->id = $id;
+
 		if ( ! $this->Administrador->exists() )
 		{
 			$this->Session->setFlash('Perfil no existe.', null, array(), 'danger');
 			$this->redirect(array('controller' => 'dashboard','action' => 'index'));
+		}
+
+		if ( $this->request->is('post') || $this->request->is('put') )
+		{	
+
+			if ( $this->Administrador->save($this->request->data) )
+			{
+				$this->Session->setFlash('Registro editado correctamente', null, array(), 'success');
+				$this->redirect(array('action' => 'perfil',$id));
+			}
+			else
+			{
+				$this->Session->setFlash('Error al guardar el registro. Por favor intenta nuevamente.', null, array(), 'danger');
+			}
+
 		}else{
+
+			$this->request->data	= $this->Administrador->find('first', array(
+				'conditions'	=> array('id' => $id)
+			));
+			
+		}	
+
 			$administrador = $this->Administrador->find('first', array('conditions' => array('id' => $id)));
 			$this->set(compact('administrador'));
+		
+		
+	}
+
+	public function admin_savepass($id = null) {
+		
+		if ( ! $this->Administrador->exists($id) )
+		{
+			$this->Session->setFlash('Registro inválido.', null, array(), 'danger');
+			$this->redirect(array('action' => 'index'));
+		}
+
+		if ( $this->request->is('post') || $this->request->is('put') )
+		{
+			if ( $this->Administrador->save($this->request->data) )
+			{
+				$this->Session->setFlash('Registro editado correctamente', null, array(), 'success');
+				$this->redirect(array('action' => 'index'));
+			}
+			else
+			{
+				$this->Session->setFlash('Error al guardar el registro. Por favor intenta nuevamente.', null, array(), 'danger');
+			}
+		}
+		else
+		{
+			$this->request->data	= $this->Administrador->find('first', array(
+				'conditions'	=> array('Administrador.id' => $id)
+			));
 		}
 		
 	}

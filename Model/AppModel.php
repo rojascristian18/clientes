@@ -14,6 +14,14 @@ class AppModel extends Model
 		return ($this->data[$this->name]['clave'] === $this->data[$this->name]['repetir_clave']);
 	}
 
+	/**
+	 * VALIDACION -- Repetir clave nueva
+	 */
+	function repetirClaveNueva($data)
+	{	
+		return ($this->data[$this->name]['clave_nueva'] === $this->data[$this->name]['repetir_clave_nueva']);
+	}
+
 
 	/**
 	 * VALIDACION -- VALIDA RUT CHILENO
