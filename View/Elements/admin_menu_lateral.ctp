@@ -10,11 +10,14 @@
 		<li class="xn-profile active">
             <div class="profile">
             	<div class="profile-image">
-            		<?= $this->Html->link('<img class="mCS_img_loaded" src="' . $this->Session->read('Auth.Administrador.avatar').'" alt="">',
-						'/admin/administradores/perfil/' . $this->Session->read('Auth.Administrador.id'),
-						array('escape' => false)
-					); ?>
-                   
+            		<? if ($this->Session->read('Auth.Administrador.google_imagen') == "") { ?>
+            			<?=$this->Html->image('logo_user.jpg', array('alt' => 'Perfil','class' => 'mCS_img_loaded'));?>
+            		<? }else{ ?>
+						<?= $this->Html->link('<img class="mCS_img_loaded" src="' . $this->Session->read('Auth.Administrador.google_imagen').'" alt="">',
+							'/admin/administradores/perfil/' . $this->Session->read('Auth.Administrador.id'),
+							array('escape' => false)
+						); ?>
+            		<? } ?>
                 </div>
                 <div class="profile-data">
                     <div class="profile-data-name"><?=$this->Session->read('Auth.Administrador.nombre');?></div>

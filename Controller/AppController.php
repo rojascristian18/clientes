@@ -26,6 +26,16 @@ class AppController extends Controller
 			)
 		),
 		'DebugKit.Toolbar',
+		'Google'		=> array(
+			'applicationName'		=> 'Sistema Brandon',
+			'developerKey'			=> 'cristian.rojas@brandon.cl',
+			'clientId'				=> '940098568661-eugvnkatiq01cj679cur3c8f2dfa0if2.apps.googleusercontent.com',
+			'clientSecret'			=> 'VYcBpJdXvtXZd9C5GDxoSDl1',
+			//'redirectUri'			=> Router::url(array('controller' => 'administradores', 'action' => 'google', 'admin' => false), true)),
+			'approvalPrompt'		=> 'auto',
+			'accessType'			=> null,//'offline',
+			'scopes'				=> array('profile', 'email')
+		)
 		//'Facebook.Connect'	=> array('model' => 'Usuario'),
 		//'Facebook'
 	);
@@ -70,6 +80,27 @@ class AppController extends Controller
 			'env'			=> 'HTTP_REFERER',
 			'pattern'		=> '/facebook\.com/i'
 		));
+
+
+		/**
+		 * OAuth Google
+		 */
+		$this->Google->cliente->setRedirectUri(Router::url(array('controller' => 'administradores', 'action' => 'login'), true));
+		$this->Google->oauth();
+
+		if ( ! empty($this->request->query['code']) && $this->Session->read('Google.code') != $this->request->query['code'] )
+		{
+			$this->Google->oauth->authenticate($this->request->query['code']);
+			$this->Session->write('Google', array(
+				'code'		=> $this->request->query['code'],
+				'token'		=> $this->Google->oauth->getAccessToken()
+			));
+		}
+
+		if ( $this->Session->check('Google.token') )
+		{
+			$this->Google->cliente->setAccessToken($this->Session->read('Google.token'));
+		}
 
 		/**
 		 * Cookies IE

@@ -17,34 +17,136 @@ class AdministradoresController extends AppController
 
 	public function admin_login()
 	{
+		/**
+		 * Login normal
+		 */
 		if ( $this->request->is('post') )
-		{	
-
-			$data = $this->Administrador->find('first', array(
-				'conditions' => array('email' => $this->request->data['Administrador']['email'],'activo' => 1),
-				'contain' => array('Rol')));
-
-			if (!empty($data)) {
-				$data['Administrador']['avatar'] = $this->request->data['Administrador']['avatar'];
-				$data['Administrador']['Rol']['id'] = $data['Rol']['id'];
-				$data['Administrador']['Rol']['nombre'] = $data['Rol']['nombre'];
-
-				if ( $this->Auth->login($data['Administrador']) ) {	
-					$this->Administrador->id = $this->Session->read('Auth.Administrador.id');
-					$this->Administrador->saveField('ultimo_acceso', date('Y-m-d H:m:s'));
-
-					$this->redirect($this->Auth->redirectUrl());
-				}
-				
-			}else{
+		{
+			if ( $this->Auth->login() )
+			{
+				$this->Session->delete('Google.token');
+				$this->redirect($this->Auth->redirectUrl());
+			}
+			else
+			{
 				$this->Session->setFlash('Nombre de usuario y/o clave incorrectos.', null, array(), 'danger');
 			}
 		}
+
+		/**
+		 * Login con sesion Google
+		 */
+		if ( $this->Session->check('Google.token') )
+		{
+			/**
+			 * Si el usuario ya tiene sesion de cake activa, lo redirecciona
+			 */
+			if ( $this->Auth->user() )
+			{
+				$this->redirect('/');
+			}
+
+			/**
+			 * Obtiene los datos del usuario
+			 */
+			$google			= $this->Session->read('Google');
+			$this->Google->plus();
+			$me				= null;
+
+			/**
+			 * Si no obtiene los datos del usuario es porque el token fue invalidado
+			 */
+			try
+			{
+				$me				= $this->Google->plus->people->get('me');
+			}
+			catch ( Exception $e )
+			{	
+				$this->Auth->logout();
+				$this->Session->setFlash('Tu sesión ha expirado. Por favor ingresa nuevamente.', null, array(), 'success');
+			}
+
+			/**
+			 * Con los datos del usuario google, intenta autenticarlo
+			 */
+
+			if ( $me )
+			{
+				$emails			= $me->getEmails();
+
+				/**
+				 * Verificamos que tenemos el email
+				 */
+				if ( empty($me->getEmails()) )
+				{
+					$this->Session->setFlash('No tienes acceso a esta aplicación.', null, array(), 'danger');
+				}
+				else
+				{
+					/**
+					 * Verificamos que exista el usuario en la DB y esté activo
+					 */
+					$administrador			= $this->Administrador->find('first', array(
+						'conditions'			=> array('Administrador.email' => $emails[0]->value),
+						'contain'				=> array('Rol')
+					));
+
+					if ( ! $administrador || ! $administrador['Administrador']['activo'] )
+					{
+						$this->Session->setFlash('No tienes acceso a esta aplicación.', null, array(), 'danger');
+					}
+					else
+					{	
+						/**
+						 * Si no tiene google_id, es primera vez que entra. Actualiza datos
+						 */
+						if ( ! $administrador['Administrador']['google_id'] )
+						{
+							$usuario		= array_merge($administrador['Administrador'], array(
+								'google_id'			=> $me->getId(),
+								'google_dominio'	=> $me->getDomain(),
+								'google_nombre'		=> $me->getName()->givenName,
+								'google_apellido'	=> $me->getName()->familyName,
+								'google_imagen'		=> $me->getImage()->url
+							));
+
+							unset($usuario['clave']);
+							$this->Administrador->id = $usuario['id'];
+							$this->Administrador->save($usuario);
+						}
+
+						/**
+						 * Normaliza los datos segun AuthComponent::identify
+						 */
+						$administrador['Administrador']['Rol'] = $administrador['Rol'];
+						$administrador = $administrador['Administrador'];
+
+						/**
+						 * Logea al usuario y lo redirecciona
+						 */
+			
+						$this->Auth->login($administrador);
+						$this->Administrador->id = $administrador['id'];
+						$this->Administrador->save(array('ultimo_acceso' => date('Y-m-d H:m:s')));
+						$this->redirect($this->Auth->redirectUrl());
+					}
+				}
+			}
+		}
+
+
+		/**
+		 * Inicializa y configura el cliente Google
+		 */
+		$authUrl			= $this->Google->cliente->createAuthUrl();
+		$this->set(compact('authUrl'));
+
 		$this->layout	= 'login';
 	}
 
 	public function admin_logout()
-	{
+	{	
+		$this->Session->delete('Google.token');
 		$this->redirect($this->Auth->logout());
 	}
 
