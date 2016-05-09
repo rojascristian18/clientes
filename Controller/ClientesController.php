@@ -136,9 +136,9 @@ class ClientesController extends AppController
 
 			}
 
-			$admines = $this->Cliente->Administrador->find('list',array('condtions' => array('activo' => 1)));
+			$admines = $this->Cliente->Administrador->find('list',array('conditions' => array('activo' => 1,'rol_id' => 3)));
 			$rubros = $this->Cliente->Rubro->find('list');
-			$asignados = $this->Cliente->Administrador->find('list',array('condtions' => array('activo' => 1)));
+			$asignados = $this->Cliente->Administrador->find('list',array('conditions' => array('activo' => 1,'rol_id' => 3)));
 			
 		}
 		
@@ -197,7 +197,7 @@ class ClientesController extends AppController
 		}
 		$vendedores	= $this->Cliente->Vendedor->find('list');
 		$rubros	= $this->Cliente->Rubro->find('list');
-		$administradores	= $this->Cliente->Administrador->find('list');
+		$administradores	= $this->Cliente->Administrador->find('list',array('conditions' => array('rol_id' => 3)));
 		$this->set(compact('administradores','contactos','vendedores','rubros'));
 	}
 
@@ -295,7 +295,7 @@ class ClientesController extends AppController
 			'contain' 		=> array('Administrador')) );
 		$vendedores	= $this->Cliente->Vendedor->find('list');
 		$rubros	= $this->Cliente->Rubro->find('list');
-		$administradores	= $this->Cliente->Administrador->find('list');
+		$administradores	= $this->Cliente->Administrador->find('list',array('conditions' => array('rol_id' => 3)));
 		$this->set(compact('administradores','contactos','designados','vendedores','rubros'));
 	}
 
