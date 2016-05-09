@@ -404,4 +404,34 @@ class ClientesController extends AppController
 
 		prx($clientes);
 	}
+
+
+	/**
+	*	Perfil del cliente
+	*/
+	public function admin_perfil($id = null ) {
+
+		$this->Cliente->id = $id;
+		if ( ! $this->Cliente->exists() )
+		{
+			$this->Session->setFlash('Cliente no existe.', null, array(), 'danger');
+			$this->redirect(array('action' => 'index'));
+		}
+		
+		$cliente = $this->Cliente->find('first',array(
+			'conditions' => array('Cliente.id' => $id),
+			'contain'	=> array(
+				'Vendedor',
+				'Rubro',
+				'Administrador',
+				'Inverison',
+				'Servicio',
+				'Sitio',
+				'Contacto',
+				'Log' => array('Administrador'))));
+
+		//prx($cliente);
+		$this->set(compact('cliente'));
+
+	}
 }

@@ -5953,3 +5953,59 @@ Request URL: /cake/clientes/admin/perfil
 Stack Trace:
 #0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2016-05-09 11:23:20 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-09 11:23:22 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-09 11:23:22 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-09 11:23:22 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-09 11:40:50 Error: Fatal Error (4): syntax error, unexpected '[', expecting ',' or ';' in [C:\wamp\www\cake\clientes\View\Clientes\admin_perfil.ctp, line 4]
+2016-05-09 11:40:50 Error: [FatalErrorException] syntax error, unexpected '[', expecting ',' or ';'
+Request URL: /cake/clientes/admin/clientes/perfil/2
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 4, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 4, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-09 11:54:13 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\wamp\www\cake\clientes\View\Clientes\admin_perfil.ctp, line 108]
+2016-05-09 11:54:13 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /cake/clientes/admin/clientes/perfil/2
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 108)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 108, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 108, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

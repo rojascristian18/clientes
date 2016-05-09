@@ -39,7 +39,7 @@
 					<tbody>
 						<?php foreach ( $clientes as $cliente ) : ?>
 						<tr>
-							<td><?= h($cliente['Cliente']['nombre']); ?>&nbsp;</td>
+							<td><?= $this->Html->link($cliente['Cliente']['nombre'], array('controller' => 'clientes', 'action' => 'perfil', $cliente['Cliente']['id'])); ?>&nbsp;</td>
 							<td><?= h($cliente['Cliente']['razon_social']); ?>&nbsp;</td>
 							<td><?= h($cliente['Cliente']['rut']); ?>&nbsp;</td>
 							<td><?= h($cliente['Cliente']['email']); ?>&nbsp;</td>

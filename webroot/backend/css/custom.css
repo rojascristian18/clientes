@@ -49,6 +49,7 @@
      -o-transition: background-color .25s ease-out;
         transition: background-color .25s ease-out;}
 .calendario th{text-align: center;}
+.float-button {position: relative;text-align: right;top: 10%;z-index: 100;padding: 10px 0 20px 0;}
 /*
 
 	Media Query
