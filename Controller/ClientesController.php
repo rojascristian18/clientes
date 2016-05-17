@@ -57,7 +57,7 @@ class ClientesController extends AppController
 					*/
 					if ($this->Session->read('Auth.Administrador.Rol.id') >= 3) {
 
-						$clientes		= "";
+						$clientes		= array();
 
 					}else{
 
