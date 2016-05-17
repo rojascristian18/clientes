@@ -50,6 +50,30 @@
         transition: background-color .25s ease-out;}
 .calendario th{text-align: center;}
 .float-button {position: relative;text-align: right;top: 10%;z-index: 100;padding: 10px 0 20px 0;}
+.profile .profile-image img {
+    width: 130px;
+    border: 2px solid #fff;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.profile .profile-image img:hover{
+	opacity: 0.7;
+}
+
+#etiqueta label {
+	color: rgb(255, 255, 255);
+	background-color: #5CAE10;
+	word-wrap: break-word;
+	width: 100%;
+	padding: 5px 10px;
+	border-radius: 3px;
+	margin: 0;
+	font-size: 1.2em;
+	cursor: pointer;
+	text-align: center;
+}
 /*
 
 	Media Query

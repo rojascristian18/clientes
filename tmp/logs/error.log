@@ -6028,3 +6028,1102 @@ Request URL: /cake/clientes/favicon.ico
 Stack Trace:
 #0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2016-05-09 16:31:23 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 399]
+2016-05-09 16:31:23 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /cake/clientes/admin/clientes/getClientHistory
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 399)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 399, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 399, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-09 16:31:27 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 399]
+2016-05-09 16:31:27 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /cake/clientes/clientes/getCalendar/undefined
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 399)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 399, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 399, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-10 12:09:35 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-10 12:09:36 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-10 12:09:36 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-10 12:09:36 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-10 12:10:10 Error: [MissingActionException] Action ClientesController::getClientHistory() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClientesController',
+  'action' => 'getClientHistory',
+)
+Request URL: /cake/clientes/clientes/getClientHistory
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-05-10 14:21:51 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\wamp\www\cake\clientes\Controller\DashboardController.php, line 7]
+2016-05-10 14:21:51 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /cake/clientes/admin/dashboard
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 7, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 7, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-10 14:55:58 Error: [MissingActionException] Action ClientesController::admin_getClientHistory() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClientesController',
+  'action' => 'admin_getClientHistory',
+)
+Request URL: /cake/clientes/admin/dashboard
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#3 C:\wamp\www\cake\clientes\Controller\DashboardController.php(7): Object->requestAction(Array)
+#4 [internal function]: DashboardController->admin_index()
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DashboardController), Array)
+#6 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(DashboardController), Object(CakeRequest))
+#8 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2016-05-10 15:54:31 Error: [MissingActionException] Action ClientesController::getClientHistory() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClientesController',
+  'action' => 'getClientHistory',
+)
+Request URL: /cake/clientes/clientes/getClientHistory
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-05-10 15:54:36 Error: [MissingActionException] Action ClientesController::getClientHistory() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClientesController',
+  'action' => 'getClientHistory',
+)
+Request URL: /cake/clientes/clientes/getClientHistory
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-05-10 15:54:57 Error: [MissingActionException] Action ClientesController::getClientHistory() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClientesController',
+  'action' => 'getClientHistory',
+)
+Request URL: /cake/clientes/clientes/getClientHistory
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-05-11 10:30:14 Error: Fatal Error (4): syntax error, unexpected '$mesOperacional' (T_VARIABLE) in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 403]
+2016-05-11 10:30:14 Error: [FatalErrorException] syntax error, unexpected '$mesOperacional' (T_VARIABLE)
+Request URL: /cake/clientes/admin/clientes/getClientHistory
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 403)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 403, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 403, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-11 10:30:20 Error: Fatal Error (4): syntax error, unexpected '$mesOperacional' (T_VARIABLE) in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 403]
+2016-05-11 10:30:20 Error: [FatalErrorException] syntax error, unexpected '$mesOperacional' (T_VARIABLE)
+Request URL: /cake/clientes/admin/clientes/getClientHistory
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 403)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 403, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 403, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-11 10:30:20 Error: Fatal Error (4): syntax error, unexpected '$mesOperacional' (T_VARIABLE) in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 403]
+2016-05-11 10:30:20 Error: [FatalErrorException] syntax error, unexpected '$mesOperacional' (T_VARIABLE)
+Request URL: /cake/clientes/clientes/getCalendar/undefined
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 403)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 403, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 403, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-11 11:00:59 Error: [MissingActionException] Action ClientesController::admin_getClientHistory3() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClientesController',
+  'action' => 'admin_getClientHistory3',
+)
+Request URL: /cake/clientes/admin/clientes/getClientHistory3
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-05-11 11:17:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/admin/img/loaders/default.gif
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-11 11:35:57 Error: [MissingControllerException] Controller class ArrayController could not be found.
+Exception Attributes: array (
+  'class' => 'ArrayController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/admin/Array
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-11 11:36:00 Error: [MissingControllerException] Controller class ArrayController could not be found.
+Exception Attributes: array (
+  'class' => 'ArrayController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/admin/Array
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-11 12:04:18 Error: [MissingActionException] Action ClientesController::admin_getSalesmanHistory() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClientesController',
+  'action' => 'admin_getSalesmanHistory',
+)
+Request URL: /cake/clientes/admin/clientes/getSalesmanHistory/6
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-05-11 12:13:21 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\wamp\www\cake\clientes\Controller\VendedoresController.php, line 140]
+2016-05-11 12:13:21 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cake/clientes/admin/vendedores/getSalesmanHistory/6
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 140)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 140, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 140, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-11 12:45:09 Error: [MissingControllerException] Controller class VendedorController could not be found.
+Exception Attributes: array (
+  'class' => 'VendedorController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/admin/vendedor/getSalesmanHistory/6
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-11 17:42:21 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-11 17:42:22 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-11 17:42:22 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-11 17:42:22 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-12 11:52:20 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-12 11:52:21 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-12 11:52:21 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-12 11:52:21 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-12 12:00:39 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\wamp\www\cake\clientes\View\Clientes\admin_asignar.ctp, line 83]
+2016-05-12 12:00:39 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /cake/clientes/admin/clientes/asignar
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 83)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 83, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 83, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-12 12:00:59 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\wamp\www\cake\clientes\View\Clientes\admin_asignar.ctp, line 83]
+2016-05-12 12:00:59 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /cake/clientes/admin/clientes/asignar
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 83)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 83, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 83, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-12 12:02:10 Error: Fatal Error (4): syntax error, unexpected '?' in [C:\wamp\www\cake\clientes\View\Clientes\admin_asignar.ctp, line 83]
+2016-05-12 12:02:10 Error: [FatalErrorException] syntax error, unexpected '?'
+Request URL: /cake/clientes/admin/clientes/asignar
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 83)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 83, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 83, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-12 13:15:58 Error: Fatal Error (4): syntax error, unexpected ''class'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\wamp\www\cake\clientes\View\Clientes\admin_add.ctp, line 242]
+2016-05-12 13:15:58 Error: [FatalErrorException] syntax error, unexpected ''class'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /cake/clientes/admin/clientes/add
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 242)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 242, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 242, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-16 11:51:26 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-16 11:51:27 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-16 11:51:27 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-16 11:51:27 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-16 15:52:23 Error: Fatal Error (4): syntax error, unexpected '>', expecting ',' or ')' in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 78]
+2016-05-16 15:52:23 Error: [FatalErrorException] syntax error, unexpected '>', expecting ',' or ')'
+Request URL: /cake/clientes/admin/clientes/asignar
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 78)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 78, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 78, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-16 15:52:25 Error: Fatal Error (4): syntax error, unexpected '>', expecting ',' or ')' in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 78]
+2016-05-16 15:52:25 Error: [FatalErrorException] syntax error, unexpected '>', expecting ',' or ')'
+Request URL: /cake/clientes/admin/clientes/getClientHistory/6
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 78)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 78, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 78, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-16 15:52:25 Error: Fatal Error (4): syntax error, unexpected '>', expecting ',' or ')' in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 78]
+2016-05-16 15:52:25 Error: [FatalErrorException] syntax error, unexpected '>', expecting ',' or ')'
+Request URL: /cake/clientes/clientes/getCalendar/undefined
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 78)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 78, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 78, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-16 15:59:53 Error: Fatal Error (1): Call to a member function save() on a non-object in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 83]
+2016-05-16 15:59:53 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /cake/clientes/admin/clientes/asignar
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\cak...', 83)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\cak...', 83, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\cak...', 83, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-16 16:09:38 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 82]
+2016-05-16 16:09:38 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /cake/clientes/admin/clientes/asignar
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 82)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 82, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 82, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-16 16:09:40 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 82]
+2016-05-16 16:09:40 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /cake/clientes/clientes/getCalendar/undefined
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 82)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 82, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 82, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-16 16:09:40 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 82]
+2016-05-16 16:09:40 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /cake/clientes/admin/clientes/getClientHistory/6
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 82)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 82, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 82, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-16 16:15:24 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 84]
+2016-05-16 16:15:24 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/clientes/admin/clientes/asignar
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\cak...', 84)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\cak...', 84, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\cak...', 84, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-16 16:22:34 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'validationsErrors' at line 1
+Request URL: /cake/clientes/admin/clientes/asignar
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('validationsErro...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('validationsErro...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(612): DboSource->fetchAll('validationsErro...', Array, Array)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(827): DboSource->query('validationsErro...', Array, Object(AppModel))
+#5 C:\wamp\www\cake\clientes\Controller\ClientesController.php(88): Model->__call('validationsErro...', Array)
+#6 C:\wamp\www\cake\clientes\Controller\ClientesController.php(88): AppModel->validationsErrors()
+#7 [internal function]: ClientesController->admin_asignar()
+#8 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#11 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-05-16 16:23:02 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'validationErrors' at line 1
+Request URL: /cake/clientes/admin/clientes/asignar
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('validationError...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('validationError...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(612): DboSource->fetchAll('validationError...', Array, Array)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(827): DboSource->query('validationError...', Array, Object(AppModel))
+#5 C:\wamp\www\cake\clientes\Controller\ClientesController.php(88): Model->__call('validationError...', Array)
+#6 C:\wamp\www\cake\clientes\Controller\ClientesController.php(88): AppModel->validationErrors()
+#7 [internal function]: ClientesController->admin_asignar()
+#8 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#11 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-05-16 16:23:10 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 88]
+2016-05-16 16:23:10 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cake/clientes/admin/clientes/asignar
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 88)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 88, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 88, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-16 16:23:12 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 88]
+2016-05-16 16:23:12 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cake/clientes/admin/clientes/getClientHistory/6
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 88)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 88, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 88, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-16 16:23:12 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 88]
+2016-05-16 16:23:12 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cake/clientes/clientes/getCalendar/undefined
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 88)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 88, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 88, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-16 16:56:18 Error: [InvalidArgumentException] Invalid Parameter , should be dot separated path or array.
+Request URL: /cake/clientes/admin/administradores/add
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Component\AuthComponent.php(670): Hash::get(Array, false)
+#1 C:\wamp\www\cake\clientes\Controller\AdministradoresController.php(178): AuthComponent::user(false)
+#2 [internal function]: AdministradoresController->admin_add()
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdministradoresController), Array)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdministradoresController), Object(CakeRequest))
+#6 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-05-16 17:26:21 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\wamp\www\cake\clientes\View\Clientes\admin_index.ctp, line 28]
+2016-05-16 17:26:21 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /cake/clientes/admin/clientes
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 28, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 28, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-17 09:35:31 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 16]
+2016-05-17 09:35:31 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /cake/clientes/admin/clientes
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 16, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 16, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-17 09:35:35 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 16]
+2016-05-17 09:35:35 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /cake/clientes/clientes/getCalendar/undefined
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 16, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 16, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-17 09:35:35 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 16]
+2016-05-17 09:35:35 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /cake/clientes/admin/clientes/getClientHistory/6
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 16, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 16, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-17 09:38:19 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE nombre %eugenio%    LIMIT 1' at line 1
+Request URL: /cake/clientes/admin/clientes
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Adminis...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Adminis...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Adminis...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Administrador), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\cake\clientes\Controller\ClientesController.php(17): Model->find('first', Array)
+#7 [internal function]: ClientesController->admin_index()
+#8 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#11 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-05-17 09:38:44 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE `Administrador`.`nombre` %eugenio%    LIMIT 1' at line 1
+Request URL: /cake/clientes/admin/clientes
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Adminis...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Adminis...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Adminis...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Administrador), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\cake\clientes\Controller\ClientesController.php(17): Model->find('first', Array)
+#7 [internal function]: ClientesController->admin_index()
+#8 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#11 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-05-17 09:41:07 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE `Administrador`.`nombre` %eugenio%    LIMIT 1' at line 1
+Request URL: /cake/clientes/admin/clientes
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Adminis...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Adminis...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Adminis...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Administrador), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\cake\clientes\Controller\ClientesController.php(17): Model->find('first', Array)
+#7 [internal function]: ClientesController->admin_index()
+#8 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#11 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-05-17 09:42:47 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE `Administrador`.`nombre` %eugenio%     LIMIT 1' at line 1
+Request URL: /cake/clientes/admin/clientes
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Adminis...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Adminis...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Adminis...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Administrador), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\cake\clientes\Controller\ClientesController.php(17): Model->find('first', Array)
+#7 [internal function]: ClientesController->admin_index()
+#8 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#11 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-05-17 09:44:44 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%eugenio%     LIMIT 1' at line 1
+Request URL: /cake/clientes/admin/clientes
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Adminis...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Adminis...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Adminis...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Administrador), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\cake\clientes\Controller\ClientesController.php(17): Model->find('first', Array)
+#7 [internal function]: ClientesController->admin_index()
+#8 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#11 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-05-17 09:45:00 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%eugenio%     LIMIT 1' at line 1
+Request URL: /cake/clientes/admin/clientes
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Adminis...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Adminis...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Adminis...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Administrador), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\cake\clientes\Controller\ClientesController.php(17): Model->find('first', Array)
+#7 [internal function]: ClientesController->admin_index()
+#8 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#11 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-05-17 09:45:38 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%eugenio     LIMIT 1' at line 1
+Request URL: /cake/clientes/admin/clientes
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Adminis...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Adminis...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Adminis...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Administrador), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\cake\clientes\Controller\ClientesController.php(17): Model->find('first', Array)
+#7 [internal function]: ClientesController->admin_index()
+#8 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#11 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-05-17 09:46:01 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%eugenio%     LIMIT 1' at line 1
+Request URL: /cake/clientes/admin/clientes
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Adminis...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Adminis...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Adminis...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Administrador), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\cake\clientes\Controller\ClientesController.php(17): Model->find('first', Array)
+#7 [internal function]: ClientesController->admin_index()
+#8 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#11 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-05-17 09:46:37 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"%eugenio%"     LIMIT 1' at line 1
+Request URL: /cake/clientes/admin/clientes
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Adminis...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Adminis...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Adminis...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Administrador), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\cake\clientes\Controller\ClientesController.php(17): Model->find('first', Array)
+#7 [internal function]: ClientesController->admin_index()
+#8 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#11 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-05-17 09:49:54 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''%eugenio%'    LIMIT 1' at line 1
+Request URL: /cake/clientes/admin/clientes
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Adminis...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Adminis...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Adminis...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Administrador), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\cake\clientes\Controller\ClientesController.php(17): Model->find('first', Array)
+#7 [internal function]: ClientesController->admin_index()
+#8 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#11 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-05-17 09:51:01 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''%eugenio%'    LIMIT 1' at line 1
+Request URL: /cake/clientes/admin/clientes
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Adminis...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Adminis...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Adminis...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Administrador), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\cake\clientes\Controller\ClientesController.php(18): Model->find('first', Array)
+#7 [internal function]: ClientesController->admin_index()
+#8 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#11 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-05-17 09:55:30 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 19]
+2016-05-17 09:55:30 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+Request URL: /cake/clientes/admin/clientes
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 19, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 19, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-17 09:55:35 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 19]
+2016-05-17 09:55:35 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 19]
+2016-05-17 09:55:35 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+Request URL: /cake/clientes/clientes/getCalendar/undefined
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 19, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 19, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-17 09:55:35 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+Request URL: /cake/clientes/admin/clientes/getClientHistory/6
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 19, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 19, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-17 09:55:51 Error: Fatal Error (4): syntax error, unexpected 'prx' (T_STRING), expecting variable (T_VARIABLE) or '$' in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 29]
+2016-05-17 09:55:51 Error: [FatalErrorException] syntax error, unexpected 'prx' (T_STRING), expecting variable (T_VARIABLE) or '$'
+Request URL: /cake/clientes/admin/clientes
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 29, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 29, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-17 09:55:57 Error: Fatal Error (4): syntax error, unexpected 'prx' (T_STRING), expecting variable (T_VARIABLE) or '$' in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 29]
+2016-05-17 09:55:57 Error: Fatal Error (4): syntax error, unexpected 'prx' (T_STRING), expecting variable (T_VARIABLE) or '$' in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 29]
+2016-05-17 09:55:57 Error: [FatalErrorException] syntax error, unexpected 'prx' (T_STRING), expecting variable (T_VARIABLE) or '$'
+Request URL: /cake/clientes/admin/clientes/getClientHistory/6
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 29, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 29, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-17 09:55:57 Error: [FatalErrorException] syntax error, unexpected 'prx' (T_STRING), expecting variable (T_VARIABLE) or '$'
+Request URL: /cake/clientes/clientes/getCalendar/undefined
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 29, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 29, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-17 09:56:43 Error: Fatal Error (4): syntax error, unexpected 'prx' (T_STRING), expecting variable (T_VARIABLE) or '$' in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 27]
+2016-05-17 09:56:43 Error: [FatalErrorException] syntax error, unexpected 'prx' (T_STRING), expecting variable (T_VARIABLE) or '$'
+Request URL: /cake/clientes/admin/clientes
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 27)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 27, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 27, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-17 09:56:50 Error: Fatal Error (4): syntax error, unexpected 'prx' (T_STRING), expecting variable (T_VARIABLE) or '$' in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 27]
+2016-05-17 09:56:50 Error: [FatalErrorException] syntax error, unexpected 'prx' (T_STRING), expecting variable (T_VARIABLE) or '$'
+Request URL: /cake/clientes/clientes/getCalendar/undefined
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 27)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 27, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 27, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-17 09:56:50 Error: Fatal Error (4): syntax error, unexpected 'prx' (T_STRING), expecting variable (T_VARIABLE) or '$' in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 27]
+2016-05-17 09:56:50 Error: [FatalErrorException] syntax error, unexpected 'prx' (T_STRING), expecting variable (T_VARIABLE) or '$'
+Request URL: /cake/clientes/admin/clientes/getClientHistory/6
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 27)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 27, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 27, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-17 09:58:10 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Adminsitrador.id' in 'field list'
+Request URL: /cake/clientes/admin/clientes
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Adminsi...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Adminsi...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Adminsi...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Administrador), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\cake\clientes\Controller\ClientesController.php(25): Model->find('all', Array)
+#7 [internal function]: ClientesController->admin_index()
+#8 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#11 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-05-17 10:53:19 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Administrador.id' in 'on clause'
+Request URL: /cake/clientes/admin/clientes
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Cliente...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Cliente...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Cliente...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Cliente), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\cake\clientes\Controller\ClientesController.php(93): Model->find('all', Array)
+#7 [internal function]: ClientesController->admin_index()
+#8 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#11 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-05-17 10:54:29 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Administrador.id' in 'on clause'
+Request URL: /cake/clientes/admin/clientes
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Cliente...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Cliente...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Cliente...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Cliente), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\cake\clientes\Controller\ClientesController.php(94): Model->find('all', Array)
+#7 [internal function]: ClientesController->admin_index()
+#8 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#11 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-05-17 11:12:54 Error: [MissingActionException] Action ClientesController::admin_webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClientesController',
+  'action' => 'admin_webroot',
+)
+Request URL: /cake/clientes/admin/clientes/webroot/backend/js/plugins/bootstrap/bootstrap-datepicker.js
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-05-17 11:13:01 Error: [MissingActionException] Action ClientesController::admin_webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClientesController',
+  'action' => 'admin_webroot',
+)
+Request URL: /cake/clientes/admin/clientes/webroot/backend/js/plugins/bootstrap/bootstrap-datepicker.js
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#2 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-05-17 12:41:31 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY `activo` DESC' at line 1
+Request URL: /cake/clientes/admin/clientes
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Cliente...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Cliente...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Cliente...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Cliente), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\cake\clientes\Controller\ClientesController.php(160): Model->find('all', Array)
+#7 [internal function]: ClientesController->admin_index()
+#8 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#11 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-05-17 12:42:24 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY `activo` DESC' at line 1
+Request URL: /cake/clientes/admin/clientes
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Cliente...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Cliente...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Cliente...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Cliente), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\cake\clientes\Controller\ClientesController.php(160): Model->find('all', Array)
+#7 [internal function]: ClientesController->admin_index()
+#8 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#11 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-05-17 12:43:15 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY `activo` DESC' at line 1
+Request URL: /cake/clientes/admin/clientes
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Cliente...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Cliente...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Cliente...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Cliente), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\cake\clientes\Controller\ClientesController.php(160): Model->find('all', Array)
+#7 [internal function]: ClientesController->admin_index()
+#8 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#11 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-05-17 12:44:08 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+Request URL: /cake/clientes/admin/clientes
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Cliente...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Cliente...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Cliente...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Cliente), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\cake\clientes\Controller\ClientesController.php(160): Model->find('all', Array)
+#7 [internal function]: ClientesController->admin_index()
+#8 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#11 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-05-17 15:21:28 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-17 15:21:28 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-17 15:21:29 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-17 15:21:29 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-17 15:21:32 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-17 15:21:33 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-17 15:21:33 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-17 15:21:36 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-17 15:21:36 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/clientes/favicon.ico
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-17 16:29:27 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'rangoFechas' in 'where clause'
+Request URL: /cake/clientes/admin/clientes
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Cliente...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Cliente...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Cliente...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Cliente), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\cake\clientes\Controller\ClientesController.php(248): Model->find('all', Array)
+#7 [internal function]: ClientesController->admin_index()
+#8 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#11 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-05-17 16:29:51 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'rangoFechas' in 'where clause'
+Request URL: /cake/clientes/admin/clientes
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Cliente...', Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Cliente...', Array, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT `Cliente...', false)
+#4 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Cliente), Array)
+#5 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Model\Model.php(3003): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\cake\clientes\Controller\ClientesController.php(248): Model->find('all', Array)
+#7 [internal function]: ClientesController->admin_index()
+#8 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#9 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest))
+#11 C:\wamp\www\cake\clientes\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-05-17 17:10:50 Error: Fatal Error (4): syntax error, unexpected '=' in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 87]
+2016-05-17 17:10:50 Error: [FatalErrorException] syntax error, unexpected '='
+Request URL: /cake/clientes/admin/clientes
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 87)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 87, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 87, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-17 17:10:54 Error: Fatal Error (4): syntax error, unexpected '=' in [C:\wamp\www\cake\clientes\Controller\ClientesController.php, line 87]
+2016-05-17 17:10:54 Error: [FatalErrorException] syntax error, unexpected '='
+Request URL: /cake/clientes/admin/clientes/getClientHistory/6
+Stack Trace:
+#0 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 87)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 87, Array)
+#2 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 87, Array)
+#3 C:\wamp\www\cake\clientes\Cake\2.7.7\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

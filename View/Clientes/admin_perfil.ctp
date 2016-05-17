@@ -119,54 +119,6 @@
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 		<div class="panel panel-primary">
 			<div class="panel-heading">
-				<h3 class="panel-title"><span class="fa fa-money"></span> Inversiones</h3>
-			</div>
-			<div class="panel-body">
-				<table class="table table-stripped">
-					<thead>
-						<tr>
-							<th>Comentario</th>
-							<th>Monto</th>
-						</tr>
-					</thead>
-				<? foreach ($cliente['Inverison'] as $indice => $inversion) : ?>
-					<tbody>
-						<tr>
-							<td><?=$inversion['comentario'];?></td>
-							<td><?=$inversion['monto'];?></td>
-						</tr>
-					</tbody>
-				<? endforeach; ?>
-				</table>
-			</div>
-		</div>
-	</div>
-	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-		<div class="panel panel-primary">
-			<div class="panel-heading">
-				<h3 class="panel-title"><span class="fa fa-cubes"></span> Servicios contratados</h3>
-			</div>
-			<div class="panel-body">
-				<table class="table table-stripped">
-					<thead>
-						<tr>
-							<th>Comentario</th>
-						</tr>
-					</thead>
-				<? foreach ($cliente['Servicio'] as $indice => $servicio) : ?>
-					<tbody>
-						<tr>
-							<td><?=$servicio['comentario'];?></td>
-						</tr>
-					</tbody>
-				<? endforeach; ?>
-				</table>
-			</div>
-		</div>
-	</div>
-	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-		<div class="panel panel-primary">
-			<div class="panel-heading">
 				<h3 class="panel-title"><span class="fa fa-file"></span> Sitios</h3>
 			</div>
 			<div class="panel-body">

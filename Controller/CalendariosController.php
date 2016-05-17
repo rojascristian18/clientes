@@ -14,7 +14,7 @@ class CalendariosController extends AppController
 	public function admin_add()
 	{
 		if ( $this->request->is('post') )
-		{
+		{	
 			$this->Calendario->create();
 			if ( $this->Calendario->save($this->request->data) )
 			{

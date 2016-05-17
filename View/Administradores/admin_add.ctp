@@ -23,14 +23,6 @@
 							<td><?= $this->Form->input('email'); ?></td>
 						</tr>
 						<tr>
-							<th><?= $this->Form->label('clave', 'Clave'); ?></th>
-							<td><?= $this->Form->input('clave', array('type' => 'password', 'autocomplete' => 'off', 'value' => '')); ?></td>
-						</tr>
-						<tr>
-							<th><?= $this->Form->label('repetir_clave', 'Repetir clave'); ?></th>
-							<td><?= $this->Form->input('repetir_clave', array('type' => 'password', 'autocomplete' => 'off', 'value' => '')); ?></td>
-						</tr>
-						<tr>
 							<th><?= $this->Form->label('fono', 'Fono'); ?></th>
 							<td><?= $this->Form->input('fono'); ?></td>
 						</tr>

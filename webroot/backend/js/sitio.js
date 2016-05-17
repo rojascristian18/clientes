@@ -118,9 +118,73 @@ $(document).ready(function(){
 		});
 	}
 
+
+	/**
+	 * Idioma español datepicker
+	 */
+	!function(a)
+	{
+		a.fn.datepicker.dates.es = {
+			days			: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+			daysShort		: ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'],
+			daysMin			: ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sa'],
+			months			: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+			monthsShort		: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+			today			: 'Hoy',
+			clear			: 'Borrar',
+			weekStart		: 1,
+			format			: 'dd/mm/yyyy'
+		}
+	}(jQuery);
+
+
+	/**
+	 * Buscador de OC - Datepicker rango fechas
+	 */
+	var $buscador_fecha_inicio		= $('#ClienteFechaInicio'),
+		$buscador_fecha_fin			= $('#ClienteFechaFinal');
+
+	if ( $buscador_fecha_inicio.length )
+	{
+		$buscador_fecha_inicio.datepicker(
+		{
+			language	: 'es',
+			format		: 'yyyy-mm-dd'
+		}).on('changeDate', function(data)
+		{
+			$buscador_fecha_fin.datepicker('setStartDate', data.date);
+		});
+
+		$buscador_fecha_fin.datepicker(
+		{
+			language	: 'es',
+			format		: 'yyyy-mm-dd'
+		}).on('changeDate', function(data)
+		{
+			$buscador_fecha_inicio.datepicker('setEndDate', data.date);
+		});
+	}
+
+
+	/**
+	 * Limpia filtros
+	 */
+	$('.js-limpiar-busqueda').on('click', function(evento)
+	{
+		evento.preventDefault();
+
+		var data = $('[data-clear=true]');
+		
+		data.each(function(){
+			$(this).val('');
+		});
+		
+
+	});
+
 	/**
 	 * Dashboard - Grafico 1
-	 */
+	 
 	if ( $('#dashboard-line-1').length )
 	{
 		Morris.Line(
@@ -146,7 +210,7 @@ $(document).ready(function(){
 			gridLineColor	: '#E5E5E5'
 		});
 	}
-
+*/
 	/**
 	*	Calendario
 	**/
@@ -162,4 +226,101 @@ $(document).ready(function(){
 
 		});
 	}
+
+	/**
+	*	Gráficos del Dashboard
+	*/
+
+	//Funciones que se ejecuta en primera instancia
+	obtenerClientesHistoria(6);
+	obtenerClientesVendedorHistoria(6);
+
+
+	$(document).on('change', '#selectMeses', function(){
+
+		obtenerClientesHistoria($(this).val());
+
+	});
+
+	$(document).on('change', '#selectMesesVendedores', function(){
+
+		obtenerClientesVendedorHistoria($(this).val());
+
+	});
+
+	function obtenerClientesHistoria( cantidadMostrar ){
+		// Se obtiene la informacion del total de datos en funcion de meses
+		$.ajax({
+			type		:	'GET',
+			url			:	webroot + 'admin/clientes/getClientHistory/' + cantidadMostrar,
+			dataType    :	'json',
+			success		:	function(response){
+				$('#dashboardClientes').html('<div class="chart-holder" id="chart-total-datos" style="height: 400px;"></div>');
+				//console.log(response);
+				datosIngresadorTotalesGraficaDashBoard( response );
+			}
+		});
+	}
+
+	function obtenerClientesVendedorHistoria( cantidadMostrar ){
+		// Se obtiene la informacion del total de datos en funcion de meses
+		$.ajax({
+			type		:	'GET',
+			url			:	webroot + 'admin/vendedores/getSalesmanHistory/' + cantidadMostrar,
+			dataType    :	'json',
+			success		:	function(response){
+				$('#dashboardVendedores').html('<div class="chart-holder" id="chart-total-vendedores" style="height: 400px;"></div>');
+				//console.log(response);
+				totalClientesVendedoresGraficaDashBoard( response );
+			}
+		});
+	}
+
+	/**
+	 *	Funcion que permite ilustrar los rgistros de los datos ingrasados en un rago de fechas
+	 */
+	function datosIngresadorTotalesGraficaDashBoard ( cantDatos )
+	{
+		if ( cantDatos.length > 0 )
+		{
+			//console.log(cantDatos);
+			var morrisCharts = function() {
+				Morris.Area({
+				  element: 'chart-total-datos',
+				  data: cantDatos,
+				  xkey: 'fecha',
+			      ykeys: ['total'],
+			      labels: ['Clientes nuevos'],
+			      xLabels : 'month',
+			      resize: true,
+			      lineColors: ['#3FBAE4']
+				});
+			}();
+		}
+	}
+
+
+	/**
+	 *	Funcion que permite ilustrar los rgistros de los vendedores ingrasados en un rago de fechas
+	 */
+	function totalClientesVendedoresGraficaDashBoard ( cantDatos )
+	{
+		if ( cantDatos.length > 0 )
+		{
+			console.log(cantDatos);
+			var morrisCharts = function() {
+				Morris.Line({
+				  element: 'chart-total-vendedores',
+				  data: cantDatos,
+				  xkey: 'fecha',
+			      ykeys: ['carloscovarrubias','cristianvendedor'],
+			      labels: ['Carlos','Cristian'],
+			      xLabels : 'month',
+			      resize: true,
+        		  lineColors: ['#3FBAE4', '#FEA223']
+				});
+			}();
+		}
+	}
+
 });

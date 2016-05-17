@@ -60,26 +60,26 @@
 				</div>
 			</div>
 		</div>
-		<? if ($this->Session->read('Auth.Administrador.Rol.id') != 3) { ?>
+		<? if ($this->Session->read('Auth.Administrador.Rol.id') < 3) { ?>
 			<div class="panel panel-primary">
-			<div class="panel-heading">
-				<h3 class="panel-title"><span class="fa fa-bullhorn"></span> Desginar Administrador</h3>
-			</div>
-			<div class="panel-body">
-				<div class="table-responsive">
-					<table class="table">
-						<tr>
-							<th><?= $this->Form->label('Administrador', 'Administradores'); ?></th>
-							<td><?= $this->Form->input('Administrador'); ?></td>
-						</tr>
-					</table>
-					<div class="pull-right">
-						<input type="submit" class="btn btn-primary esperar-carga" autocomplete="off" data-loading-text="Espera un momento..." value="Guardar cambios">
-						<?= $this->Html->link('Cancelar', array('action' => 'index'), array('class' => 'btn btn-danger')); ?>
+				<div class="panel-heading">
+					<h3 class="panel-title"><span class="fa fa-bullhorn"></span> Desginar Administrador</h3>
+				</div>
+				<div class="panel-body">
+					<div class="table-responsive">
+						<table class="table">
+							<tr>
+								<th><?= $this->Form->label('Administrador', 'Administradores'); ?></th>
+								<td><?= $this->Form->input('Administrador'); ?></td>
+							</tr>
+						</table>
+						<div class="pull-right">
+							<input type="submit" class="btn btn-primary esperar-carga" autocomplete="off" data-loading-text="Espera un momento..." value="Guardar cambios">
+							<?= $this->Html->link('Cancelar', array('action' => 'index'), array('class' => 'btn btn-danger')); ?>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 		<? }else{
 			echo $this->Form->input('Administrador', array('class' => 'hidden'));
 			?>
@@ -89,109 +89,6 @@
                });
            </script>
 			<? } ?>
-		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<!-- INVERSIONES -->
-				<div class="panel panel-primary">
-					<div class="panel-heading">
-						<h3 class="panel-title"><span class="fa fa-money"></span> Inversiones</h3>
-					</div>
-					<div class="panel-body">
-						<div class="table-responsive">
-							<table class="table js-clon-scope">
-								<thead>
-									<tr>
-										<th>Descripción</th>
-										<th>Monto</th>
-										<th>Acciones</th>
-									</tr>
-								</thead>
-								<tbody class="js-clon-contenedor js-clon-blank">
-									<tr class="js-clon-base hidden">
-										<td><?=$this->Form->input('Inverison.999.comentario',array('placeholder' => 'Ingrese descripción'));?></td>
-										<td><?=$this->Form->input('Inverison.999.monto',array('placeholder' => 'Ingrese monto'));?></td>
-										<td>
-											<a href="#" class="btn btn-xs btn-danger js-clon-eliminar"><i class="fa fa-trash"></i> Eliminar</a>
-										</td>
-									</tr>
-									<? if ( ! empty($this->request->data['Inverison']) ) : ?>
-										<? foreach ( $this->request->data['Inverison'] as $index => $inversion ) : ?>
-										<tr>
-											<td><?= $this->Form->input(sprintf('Inverison.%d.comentario', $index), array('class' => 'form-control','placeholder' => 'Ingrese descripción')); ?></td>
-											<td><?= $this->Form->input(sprintf('Inverison.%d.monto', $index), array('class' => 'form-control', 'placeholder' => 'Ingrese monto')); ?></td>
-											<td>
-												<a href="#" class="btn btn-xs btn-danger js-clon-eliminar"><i class="fa fa-trash"></i> Eliminar</a>
-												<!--<a href="#" class="btn btn-xs btn-primary js-clon-clonar"><i class="fa fa-clone"></i> Duplicar</a>-->
-											</td>
-										</tr>
-										<? endforeach; ?>
-										<? endif; ?>
-								</tbody>
-								<tfoot>
-									<tr>
-										<td colspan="2">&nbsp;</td>
-										<td><a href="#" class="btn btn-xs btn-success js-clon-agregar"><i class="fa fa-plus"></i> Agregar inversión</a></td>
-									</tr>
-								</tfoot>
-							</table>
-							<div class="pull-right">
-								<input type="submit" class="btn btn-primary esperar-carga" autocomplete="off" data-loading-text="Espera un momento..." value="Guardar cambios">
-								<?= $this->Html->link('Cancelar', array('action' => 'index'), array('class' => 'btn btn-danger')); ?>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<!-- SERVICIOS-->
-				<div class="panel panel-primary">
-					<div class="panel-heading">
-						<h3 class="panel-title"><span class="fa fa-cube"></span> Servicios contratados</h3>
-					</div>
-					<div class="panel-body">
-						<div class="table-responsive">
-							<table class="table js-clon-scope">
-								<thead>
-									<tr>
-										<th>Descripción</th>
-										<th>Acciones</th>
-									</tr>
-								</thead>
-								<tbody class="js-clon-contenedor js-clon-blank">
-									<tr class="js-clon-base hidden">
-										<td><?=$this->Form->input('Servicio.999.comentario',array('placeholder' => 'Ingrese descripción'));?></td>
-										<td>
-											<a href="#" class="btn btn-xs btn-danger js-clon-eliminar"><i class="fa fa-trash"></i> Eliminar</a>
-										</td>
-									</tr>
-									<? if ( ! empty($this->request->data['Servicio']) ) : ?>
-										<? foreach ( $this->request->data['Servicio'] as $index => $servicio ) : ?>
-										<tr>
-											<td><?= $this->Form->input(sprintf('Servicio.%d.comentario', $index), array('class' => 'form-control','placeholder' => 'Ingrese descripción')); ?></td>
-											<td>
-												<a href="#" class="btn btn-xs btn-danger js-clon-eliminar"><i class="fa fa-trash"></i> Eliminar</a>
-												<!--<a href="#" class="btn btn-xs btn-primary js-clon-clonar"><i class="fa fa-clone"></i> Duplicar</a>-->
-											</td>
-										</tr>
-										<? endforeach; ?>
-										<? endif; ?>
-								</tbody>
-								<tfoot>
-									<tr>
-										<td>&nbsp;</td>
-										<td><a href="#" class="btn btn-xs btn-success js-clon-agregar"><i class="fa fa-plus"></i> Agregar servicio</a></td>
-									</tr>
-								</tfoot>
-							</table>
-							<div class="pull-right">
-								<input type="submit" class="btn btn-primary esperar-carga" autocomplete="off" data-loading-text="Espera un momento..." value="Guardar cambios">
-								<?= $this->Html->link('Cancelar', array('action' => 'index'), array('class' => 'btn btn-danger')); ?>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 		<!-- SITIOS -->
 		<div class="panel panel-primary">
 			<div class="panel-heading">
@@ -307,6 +204,142 @@
 				</div>
 			</div>
 		</div>
+		<!-- CALENDARIO -->
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title"><sapan class="fa fa-calendar"></sapan> Calendario</h3>
+			</div>
+			<div class="panel-body">
+				<div class="table-responsive">
+					<table class="table calendario">
+						<thead>
+							<tr>
+								<th>Semana/Día</th>
+								<th>Lunes</th>
+								<th>Martes</th>
+								<th>Miercoles</th>
+								<th>Jueves</th>
+								<th>Viernes</th>
+							</tr>
+						</thead>
+						<tbody>
+							<? for ($i=1; $i < 6; $i++) {
+								echo "<tr><td><span class='semana'>Semana ".$i."</span></td>";
+								for ($j=1; $j < 6; $j++) {
+									echo "<td><div class='calendar-box' data-semana='".$i."' data-dia='".$j."'><span id='etiqueta'></span>"; ?>
+									<div class="modal fade" id="confirmar" tabindex="-1" role="dialog">
+									  <div class="modal-dialog">
+									    <div class="modal-content">
+									      <div class="modal-header">
+									        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									        <h4 class="modal-title">Registrar evento</h4>
+									      </div>
+									      <div class="modal-body" id="eventContent">
+									        	<div class="form-group">
+									        		<?= $this->Form->label('Calendario.'.$i.$j.'.nombre', 'Nombre'); ?>
+									        		<?= $this->Form->input('Calendario.'.$i.$j.'.nombre', array('class' => 'form-control input_nombre')); ?>
+									        		<?= $this->Form->input('Calendario.'.$i.$j.'.dia',array('type' => 'hidden','class' => 'input_dia','value' => $j)); ?>
+									        		<?= $this->Form->input('Calendario.'.$i.$j.'.semana',array('type' => 'hidden','class' => 'input_semana','value' => $i)); ?>
+									        	</div>
+									        	<div class="form-group">
+									        		<?= $this->Form->label('Calendario.'.$i.$j.'.observacion', 'Observación'); ?>
+									        		<?= $this->Form->input('Calendario.'.$i.$j.'.observacion',array('class' => 'form-control input_observacion')); ?>
+									        	</div>
+									        <div class="pull-left">
+												<a href="" id="removerEvento" class="btn btn-danger btn-xs"><span class="fa fa-remove"></span> Eliminar evento</a>
+											</div>
+											<div class="pull-right">
+												<button id="btn_agregar_evento" class="btn btn-primary esperar-carga">Agregar</button>
+												<button class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+											</div>
+									      </div>
+									    </div><!-- /.modal-content -->
+									  </div><!-- /.modal-dialog -->
+									</div><!-- /.modal -->
+								<?	echo "</div></td>";
+								}
+								echo "<tr>";
+							}?>
+						</tbody>
+					</table>
+					<div class="pull-right">
+						<input type="submit" class="btn btn-primary esperar-carga" autocomplete="off" data-loading-text="Espera un momento..." value="Guardar cambios">
+						<?= $this->Html->link('Cancelar', array('action' => 'index'), array('class' => 'btn btn-danger')); ?>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<script type="text/javascript">
+
+
+	$('.calendar-box').on('click', function(){
+		var box 		= $(this);
+		var semana 		= box.data('semana');
+		var dia 		= box.data('dia');
+		var modal 		= box.children('#confirmar');
+		modalMostrar(modal);
+	});
+
+
+	$('.calendar-box #etiqueta label').on('click', function(){
+		var box 		= $(this).parent().parent('.calendar-box');
+		var semana 		= box.data('semana');
+		var dia 		= box.data('dia');
+		var modal 		= $(box).children('#confirmar');
+		modalMostrar(modal);
+	});
+
+
+	$(document).on('click','#removerEvento',function(event){	
+		event.preventDefault();
+
+		var caja1 = $(this).parent().parent().find('input[type="text"]');
+		var caja2 = $(this).parent().parent().find('textarea');
+		
+		$(caja1).val('');
+		$(caja2).val('');
+
+		var box			= $(this).parent().parent().parent().parent().parent().parent().children('#etiqueta');
+		var modal 		= $(this).parent().parent().parent().parent().parent().parent().children('#confirmar');
+		console.log(box);
+		$(box).html('');
+		ocultarModal(modal);
+	});
+
+
+	$(document).on('click','#btn_agregar_evento',function(event){
+		event.preventDefault();
+
+		var data 		= $(this).parent().parent();
+		var nombre 		= $(data).find('.input_nombre').val();
+		var dia 		= $(data).find('.input_dia').val();
+		var semana 		= $(data).find('.input_semana').val();
+		var observacion = $(data).find('.input_observacion').val();
+
+		var box			= $(data).parent().parent().parent().parent().children('#etiqueta');
+		var modal 		= $(data).parent().parent().parent().parent().children('#confirmar');
+		
+		ocultarModal(modal);
+
+		$(box).html("<label>" + nombre + "</label>");
+	});
+
+	/**
+	*	Mostrar modal
+	*/
+	function modalMostrar(objeto){
+		$(objeto).modal('show');
+	}
+
+	/**
+	*	Ocultar modal
+	*/
+	function ocultarModal(objeto){
+		$(objeto).modal('hide');
+	}
+
+</script>
 		<?=$this->Form->input('Log.0.administrador_id',array('type' => 'hidden', 'value' => $this->Session->read('Auth.Administrador.id')));?>
 		<?=$this->Form->input('Log.0.comentario',array('type' => 'hidden', 'value' => 'Cliente creado'));?>
 		<?=$this->Form->input('Log.0.fecha',array('type' => 'hidden', 'value' => date('Y-m-d H:m:s')));?>

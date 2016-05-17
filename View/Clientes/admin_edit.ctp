@@ -61,7 +61,7 @@
 				</div>
 			</div>
 		</div>
-		<? if ($this->Session->read('Auth.Administrador.Rol.id') != 3) { ?>
+		<? if ($this->Session->read('Auth.Administrador.Rol.id') < 3) { ?>
 			<div class="panel panel-primary">
 			<div class="panel-heading">
 				<h3 class="panel-title"><span class="fa fa-bullhorn"></span> Desginar Administrador</h3>
@@ -107,109 +107,6 @@
 			</div>
 		</div>
 		<? }?>
-		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<!-- INVERSIONES -->
-				<div class="panel panel-primary">
-					<div class="panel-heading">
-						<h3 class="panel-title"><span class="fa fa-money"></span> Inversiones</h3>
-					</div>
-					<div class="panel-body">
-						<div class="table-responsive">
-							<table class="table js-clon-scope">
-								<thead>
-									<tr>
-										<th>Descripción</th>
-										<th>Monto</th>
-										<th>Acciones</th>
-									</tr>
-								</thead>
-								<tbody class="js-clon-contenedor js-clon-blank">
-									<tr class="js-clon-base hidden">
-										<td><?=$this->Form->input('Inverison.999.comentario',array('placeholder' => 'Ingrese descripción'));?></td>
-										<td><?=$this->Form->input('Inverison.999.monto',array('placeholder' => 'Ingrese monto'));?></td>
-										<td>
-											<a href="#" class="btn btn-xs btn-danger js-clon-eliminar"><i class="fa fa-trash"></i> Eliminar</a>
-										</td>
-									</tr>
-									<? if ( ! empty($this->request->data['Inverison']) ) : ?>
-										<? foreach ( $this->request->data['Inverison'] as $index => $inversion ) : ?>
-										<tr>
-											<td><?= $this->Form->input(sprintf('Inverison.%d.comentario', $index), array('class' => 'form-control','placeholder' => 'Ingrese descripción')); ?></td>
-											<td><?= $this->Form->input(sprintf('Inverison.%d.monto', $index), array('class' => 'form-control', 'placeholder' => 'Ingrese monto')); ?></td>
-											<td>
-												<a href="#" class="btn btn-xs btn-danger js-clon-eliminar"><i class="fa fa-trash"></i> Eliminar</a>
-												<!--<a href="#" class="btn btn-xs btn-primary js-clon-clonar"><i class="fa fa-clone"></i> Duplicar</a>-->
-											</td>
-										</tr>
-										<? endforeach; ?>
-										<? endif; ?>
-								</tbody>
-								<tfoot>
-									<tr>
-										<td colspan="2">&nbsp;</td>
-										<td><a href="#" class="btn btn-xs btn-success js-clon-agregar"><i class="fa fa-plus"></i> Agregar inversión</a></td>
-									</tr>
-								</tfoot>
-							</table>
-							<div class="pull-right">
-								<input type="submit" class="btn btn-primary esperar-carga" autocomplete="off" data-loading-text="Espera un momento..." value="Guardar cambios">
-								<?= $this->Html->link('Cancelar', array('action' => 'index'), array('class' => 'btn btn-danger')); ?>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<!-- SERVICIOS-->
-				<div class="panel panel-primary">
-					<div class="panel-heading">
-						<h3 class="panel-title"><span class="fa fa-cube"></span> Servicios contratados</h3>
-					</div>
-					<div class="panel-body">
-						<div class="table-responsive">
-							<table class="table js-clon-scope">
-								<thead>
-									<tr>
-										<th>Descripción</th>
-										<th>Acciones</th>
-									</tr>
-								</thead>
-								<tbody class="js-clon-contenedor js-clon-blank">
-									<tr class="js-clon-base hidden">
-										<td><?=$this->Form->input('Servicio.999.comentario',array('placeholder' => 'Ingrese descripción'));?></td>
-										<td>
-											<a href="#" class="btn btn-xs btn-danger js-clon-eliminar"><i class="fa fa-trash"></i> Eliminar</a>
-										</td>
-									</tr>
-									<? if ( ! empty($this->request->data['Servicio']) ) : ?>
-										<? foreach ( $this->request->data['Servicio'] as $index => $servicio ) : ?>
-										<tr>
-											<td><?= $this->Form->input(sprintf('Servicio.%d.comentario', $index), array('class' => 'form-control','placeholder' => 'Ingrese descripción')); ?></td>
-											<td>
-												<a href="#" class="btn btn-xs btn-danger js-clon-eliminar"><i class="fa fa-trash"></i> Eliminar</a>
-												<!--<a href="#" class="btn btn-xs btn-primary js-clon-clonar"><i class="fa fa-clone"></i> Duplicar</a>-->
-											</td>
-										</tr>
-										<? endforeach; ?>
-										<? endif; ?>
-								</tbody>
-								<tfoot>
-									<tr>
-										<td>&nbsp;</td>
-										<td><a href="#" class="btn btn-xs btn-success js-clon-agregar"><i class="fa fa-plus"></i> Agregar servicio</a></td>
-									</tr>
-								</tfoot>
-							</table>
-							<div class="pull-right">
-								<input type="submit" class="btn btn-primary esperar-carga" autocomplete="off" data-loading-text="Espera un momento..." value="Guardar cambios">
-								<?= $this->Html->link('Cancelar', array('action' => 'index'), array('class' => 'btn btn-danger')); ?>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 		<!-- SITIOS -->
 		<div class="panel panel-primary">
 			<div class="panel-heading">

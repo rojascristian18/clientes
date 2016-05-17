@@ -17,7 +17,8 @@
 						); ?>
             			
             		<? }else{ ?>
-						<?= $this->Html->link('<img class="mCS_img_loaded" src="' . $this->Session->read('Auth.Administrador.google_imagen').'" alt="">',
+            			<? $avatar =  str_replace('sz=50', 'sz=200', $avatar['Administrador']['google_imagen']);?>
+						<?= $this->Html->link('<img class="mCS_img_loaded" src="' . $avatar .'" alt="">',
 							'/admin/administradores/perfil/' . $this->Session->read('Auth.Administrador.id'),
 							array('escape' => false)
 						); ?>

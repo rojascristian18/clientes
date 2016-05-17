@@ -116,7 +116,9 @@ class AppController extends Controller
 		$totalClientes		= $this->obtenerClientes();
 		$totalNuevos		= $this->obtenerClientesNuevos();
 		$clienteAdmin 		= $this->obtenerClientesAdministrador();
-		$this->set(compact('modulosDisponibles','totalActivos','totalDesactivos','totalClientes','totalNuevos','clienteAdmin'));
+		$vendedorClientes 	= $this->obtenerVendedorClientes();
+		$avatar 			= $this->obtenerAvatar();
+		$this->set(compact('modulosDisponibles','totalActivos','totalDesactivos','totalClientes','totalNuevos','clienteAdmin','avatar','vendedorClientes'));
 	}
 
 	/**
@@ -179,6 +181,15 @@ class AppController extends Controller
 		return $data;
 	}
 
+	/**
+
+		Obtener avatar
+
+	*/
+	private function obtenerAvatar(){
+		$this->Administrador = $this->instanceModel('Administrador');
+		return $this->Administrador->find('first',array('fields' => array('google_imagen'), 'conditions' => array('id' => $this->Session->read('Auth.Administrador.id'))));
+	}
 
 	/**
 
@@ -199,6 +210,21 @@ class AppController extends Controller
 	private function obtenerClientesInactivos(){
 		$this->Cliente = $this->instanceModel('Cliente');
 		return $this->Cliente->find('count',array('conditions' => array('activo' => 0)));
+	}
+
+
+	/**
+
+		Obtener total clientes por vendedor
+
+	*/
+	private function obtenerVendedorClientes(){
+		$this->Vendedor = $this->instanceModel('Vendedor');
+		return $this->Vendedor->find('all',array(
+			'conditions' => array('activo' => 1),
+			'contain'	=> array('Cliente' => array('conditions' => array('activo' => 1)))
+			)
+		);
 	}
 
 
@@ -231,7 +257,7 @@ class AppController extends Controller
 	*/
 	private function obtenerClientesAdministrador(){
 		$this->Administrador = $this->instanceModel('Administrador');
-		return $this->Administrador->find('all',array('contain' => array('Cliente')));
+		return $this->Administrador->find('all',array('contain' => array('Cliente'),'conditions' => array('rol_id' => 3,'activo' => 1)));
 	}
 
 

@@ -58,4 +58,5 @@ class AdministradoresCliente extends AppModel
 			//'counterScope'			=> array('Asociado.modelo' => 'Administrador')
 		)
 	);
+
 }

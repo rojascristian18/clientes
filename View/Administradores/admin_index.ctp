@@ -27,7 +27,7 @@
 					<tbody>
 						<?php foreach ( $administradores as $administrador ) : ?>
 						<tr>
-							<td><?= $this->Html->link($administrador['Rol']['nombre'], array('controller' => 'roles', 'action' => 'edit', $administrador['Rol']['id'])); ?></td>
+							<td><?= h($administrador['Rol']['nombre']); ?></td>
 							<td><?= h($administrador['Administrador']['nombre']); ?>&nbsp;</td>
 							<td><?= h($administrador['Administrador']['email']); ?>&nbsp;</td>
 							<td><?= h($administrador['Administrador']['ultimo_acceso']); ?>&nbsp;</td>

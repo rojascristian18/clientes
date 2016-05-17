@@ -136,3 +136,54 @@ function prx()
 		pr($arg);
 	exit;
 }
+
+
+function ultimosAnnios($annios) {
+	$fechas			=	array();
+	$annio		=	date("Y");
+	$iteral		=	1;
+	for ( $an  = $annio; $an >= - $annios; $an --)
+	{
+		if ( $iteral <=  $annios)
+		{
+			array_push($fechas, array(
+				'inicio'	=> date("Y-m-d", mktime(0, 0, 0, 1, 1, $an)),
+				'fin'		=> date("Y-m-d", mktime(0, 0, 0, 0 + 1, 0, $an + 1))
+			));
+			$iteral ++;
+		}
+		else
+		{
+			continue;
+		}
+	}
+	asort($fechas);
+	return $fechas;
+}
+
+
+
+function ultimosMeses($meses){
+	$fechas		=	array();
+	$annio		=	date("Y");
+	$mes		=	date("m");
+	$iteral		=	1;
+
+	for ( $ia = $mes ; $ia >= - $meses ; $ia -- )
+	{
+		if ( $iteral <=  $meses)
+		{
+			array_push($fechas, array(
+				'inicio'	=> date("Y-m-d", mktime(0, 0, 0, $ia, 1, $annio)),
+				'fin'		=> date("Y-m-d", mktime(0, 0, 0, $ia + 1, 0, $annio))
+			));
+			$iteral ++;
+		}
+		else
+		{
+			continue;
+		}
+	}
+	asort($fechas);
+	return $fechas;
+}

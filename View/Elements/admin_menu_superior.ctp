@@ -5,13 +5,6 @@
 	<li class="pull-right">
 		<a href="#" class="mb-control" data-box="#mb-signout"><i class="fa fa-sign-out"></i> Cerrar sesión</a>
 	</li>
-	<li class="pull-right">
-		<?= $this->Html->link(
-			'<i class="fa fa-lock"></i> Bloquear pantalla',
-			array('controller' => 'administradores', 'action' => 'lock'),
-			array('escape' => false)
-		); ?>
-	</li>
 </ul>
 
 <div class="message-box animated fadeIn" data-sound="alert" id="mb-signout">

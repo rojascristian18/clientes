@@ -124,7 +124,7 @@ class AdministradoresController extends AppController
 						/**
 						 * Logea al usuario y lo redirecciona
 						 */
-			
+						
 						$this->Auth->login($administrador);
 						$this->Administrador->id = $administrador['id'];
 						$this->Administrador->save(array('ultimo_acceso' => date('Y-m-d H:m:s')));
@@ -146,36 +146,11 @@ class AdministradoresController extends AppController
 
 	public function admin_logout()
 	{	
+		/**
+		*	Elimina la sesión de google
+		*/
 		$this->Session->delete('Google.token');
 		$this->redirect($this->Auth->logout());
-	}
-
-	public function admin_lock()
-	{
-		$this->layout		= 'login';
-
-		if ( ! $this->request->is('post') )
-		{
-			if ( ! $this->Session->check('Admin.lock') )
-			{
-				$this->Session->write('Admin.lock', array(
-					'status'		=> true,
-					'referer'		=> $this->referer()
-				));
-			}
-		}
-		else
-		{
-			$administrador		= $this->Administrador->findById($this->Auth->user('id'));
-			if ( $this->Auth->password($this->request->data['Administrador']['clave']) === $administrador['Administrador']['clave'] )
-			{
-				$referer		= $this->Session->read('Admin.lock.referer');
-				$this->Session->delete('Admin.lock');
-				$this->redirect($referer);
-			}
-			else
-				$this->Session->setFlash('Clave incorrecta.', null, array(), 'danger');
-		}
 	}
 
 	public function admin_index()
@@ -199,7 +174,12 @@ class AdministradoresController extends AppController
 				$this->Session->setFlash('Error al guardar el registro. Por favor intenta nuevamente.', null, array(), 'danger');
 			}
 		}
-		$roles	= $this->Administrador->Rol->find('list');
+
+		if ($this->Session->read('Auth.Administrador.Rol.id')==1) {
+			$roles	= $this->Administrador->Rol->find('list');	
+		}else{
+			$roles	= $this->Administrador->Rol->find('list',array('conditions' => array('id != 1')));
+		}
 		$clientes	= $this->Administrador->Cliente->find('list');
 		$this->set(compact('roles', 'clientes'));
 	}
@@ -231,7 +211,11 @@ class AdministradoresController extends AppController
 			));
 		}
 		
-		$roles	= $this->Administrador->Rol->find('list');
+		if ($this->Session->read('Auth.Administrador.Rol.id')==1) {
+			$roles	= $this->Administrador->Rol->find('list');	
+		}else{
+			$roles	= $this->Administrador->Rol->find('list',array('conditions' => array('id != 1')));
+		}
 		$clientesAsignados = $this->Administrador->find('first',array(
 			'conditions' => array('Administrador.id' => $id),
 			'contain' => array('Cliente')));

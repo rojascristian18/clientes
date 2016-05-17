@@ -1,13 +1,25 @@
 <div class="page-title">
 	<h2><span class="fa fa-users"></span> Asignación de clientes</h2>
 </div>
-
 <div class="page-content-wrap">
+	<div class="row">
+		<div class="col-md-12">
+			<p>Instrucciones:</p>
+			<i>Puede filtrar los clientes por su administrador o por su rubro(opcional)</i>
+			<br>
+			<br>
+			<ul>
+				<li>Seleccione el/los clientes que quiera asignar</li>
+				<li>Seleccione al nuevo administrador</li>
+				<li>Presione en "signar seleccionados"</li>
+			</ul>
+		</div>
+	</div>
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 pull-right">
 			<div class="panel panel-primary">
 				<div class="panel-heading">
-					<h3>Asignar</h3>
+					<h3>Asignar clientes</h3>
 				</div>
 				<div class="panel-body">
 					<div class="row">
@@ -16,7 +28,7 @@
 							<?=$this->Form->label('asignados', 'Administradores'); ?>
 							<?=$this->Form->input('asignados'); ?>
 							<? if (isset($clientes[0]['Administrador'][0]['id'])) {?>
-								<?=$this->Form->input('ClienteAnterior.id',array('type' => 'hidden','value' => $clientes[0]['Administrador'][0]['id'])); ?>
+								<?=$this->Form->input('AdministradorAnterior.id',array('type' => 'hidden','value' => $clientes[0]['Administrador'][0]['id'])); ?>
 							<? } ?>
 						</div>
 						<div class="col-md-offset-2 col-md-4">
@@ -30,7 +42,7 @@
 		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 pull-left">
 			<div class="panel panel-primary">
 				<div class="panel-heading">
-					<h3>Filtro</h3>
+					<h3>Filtrar clientes</h3>
 				</div>
 				<div class="panel-body">
 					<div class="row">
@@ -58,7 +70,7 @@
 		<div class="col-md-12">
 			<div class="panel panel-primary">
 				<div class="panel-heading">
-					<h3>Resultados</h3>
+					<h3>Clientes activos</h3>
 				</div>
 				<div class="panel-body">
 					<div class="table-responsive">
@@ -80,7 +92,7 @@
 								<tr>
 									<td><input type="checkbox" value="<?=$cliente['Cliente']['id'];?>" class="add-to-form"></td>
 									<td><?= h($cliente['Cliente']['nombre']); ?>&nbsp;</td>
-									<td><?= h($cliente['Administrador'][0]['nombre']); ?>&nbsp;</td>
+									<td><?= ( ! empty($cliente['Administrador'][0]['nombre']) ? $cliente['Administrador'][0]['nombre'] :  "No asignado"); ?>&nbsp;</td>
 									<td><?= h($cliente['Cliente']['rut']); ?>&nbsp;</td>
 									<td><?= h($cliente['Cliente']['email']); ?>&nbsp;</td>
 									<td><?= h($cliente['Cliente']['fono']); ?>&nbsp;</td>
