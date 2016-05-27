@@ -55,7 +55,7 @@ class ClientesController extends AppController
 					/**
 					* Si es rol cuentas solo filtra sus clientes
 					*/
-					if ($this->Session->read('Auth.Administrador.Rol.id') >= 3) {
+					if ($this->Session->read('Auth.Administrador.Rol.id') >= 3 && $this->Session->read('Auth.Administrador.Rol.id') != 5) {
 
 						$clientes		= array();
 
@@ -108,7 +108,7 @@ class ClientesController extends AppController
 					/**
 					* Si es rol cuentas solo filtra sus clientes
 					*/
-					if ($this->Session->read('Auth.Administrador.Rol.id') >= 3) {
+					if ($this->Session->read('Auth.Administrador.Rol.id') >= 3 && $this->Session->read('Auth.Administrador.Rol.id') != 5) {
 
 						$clientes		= $this->Cliente->find('all',array(
 							'joins' 	=> array(
@@ -169,7 +169,7 @@ class ClientesController extends AppController
 					/**
 					* Si es rol cuentas solo filtra sus clientes
 					*/
-					if ($this->Session->read('Auth.Administrador.Rol.id') >= 3) {
+					if ($this->Session->read('Auth.Administrador.Rol.id') >= 3 && $this->Session->read('Auth.Administrador.Rol.id') != 5) {
 
 						$clientes		= $this->Cliente->find('all',array(
 							'joins' 	=> array(
@@ -214,7 +214,7 @@ class ClientesController extends AppController
 					/**
 					* Si es rol cuentas solo filtra sus clientes
 					*/
-					if ($this->Session->read('Auth.Administrador.Rol.id') >= 3) {
+					if ($this->Session->read('Auth.Administrador.Rol.id') >= 3 && $this->Session->read('Auth.Administrador.Rol.id') != 5) {
 
 						$clientes		= $this->Cliente->find('all',array(
 							'joins' 	=> array(
@@ -293,7 +293,7 @@ class ClientesController extends AppController
 
 	public function admin_asignar()
 	{
-		if ($this->Session->read('Auth.Administrador.Rol.id') >= 3) {
+		if ($this->Session->read('Auth.Administrador.Rol.id') >= 3 && $this->Session->read('Auth.Administrador.Rol.id') != 5) {
 			$clientes		= $this->Cliente->find('all',array(
 				'joins' 			=> array(
 					array(
