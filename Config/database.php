@@ -7,7 +7,7 @@ class DATABASE_CONFIG
 		'host'			=> 'localhost',
 		'login'			=> 'root',
 		'password'		=> '',
-		'database'		=> 'brandon_clientes',
+		'database'		=> '',
 		'prefix'		=> 'tb_',
 		'encoding'		=> 'utf8'
 	);
